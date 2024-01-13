@@ -8,7 +8,25 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
-result = pyfiglet.figlet_format("The Lost Island", font="block" ) 
-print(Fore.BLUE + result) 
+def welcome():
 
-print(Fore.RED + "Sorry your name can only contains letters")
+    print()
+    print()
+    txt1 = "Welcome to "
+    new_str = txt1.center(80)
+    print(Fore.WHITE + new_str)
+    print()
+    result = pyfiglet.figlet_format("The Lost Island", font = "cybermedium" , justify="center") 
+    print(Fore.CYAN + result)
+    txt2 = "Do you have the courage to enter this adventure?"
+    new_str = txt2.center(80)
+    print(Fore.WHITE + new_str)
+    print()
+    print()
+    input(Fore.CYAN+ "Enter yes or no\n")
+
+welcome()
+
+
+
+
