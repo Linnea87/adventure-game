@@ -1,3 +1,6 @@
+"""
+Modules
+"""
 import sys
 import os
 import pyfiglet 
@@ -6,4 +9,6 @@ from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
 result = pyfiglet.figlet_format("The Lost Island", font="block" ) 
-print(result) 
+print(Fore.BLUE + result) 
+
+print(Fore.RED + "Sorry your name can only contains letters")
