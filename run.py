@@ -1,3 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import sys
+import os
+import pyfiglet 
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
+
+result = pyfiglet.figlet_format("The Lost Island", font="block" ) 
+print(result) 
