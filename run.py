@@ -23,9 +23,46 @@ def welcome():
     print(Fore.WHITE + new_str)
     print()
     print()
-    input(Fore.CYAN+ "Enter yes or no\n")
 
-welcome()
+    userAnswer = input(Fore.CYAN+ "yes or no?\n\n")
+    print()
+    if(userAnswer == "yes"):
+        print("Good! The first thing you have to do is enter your name below:")
+        print()
+
+        while True:
+            try:
+                name = input("")
+                if not name.isalpha():
+                    print()
+                    print(Fore.RED + "Sorry your name can only contains letters")
+                
+                elif len(name) < 3:
+                    print()
+                    print(Fore.RED + "Sorry your name needs to be 3 letters long or more")
+                
+                else:
+                    print()
+                    print(name + ", you are now about to begin perhaps") 
+                    print("your most exciting, fast-paced and dangerous") 
+                    print("adventure you have ever been on!")
+                    input("\nSo when you feel ready to begin just hit enter!\n")
+                    break
+            
+            except Exception as e:
+                print(Fore.RED + f"An error occurred: {e}")
+        
+
+    elif(userAnswer =="no"):
+        print("")
+    else:
+        print("")
+
+
+welcome()   
+
+
+
 
 
 
