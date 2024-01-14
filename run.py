@@ -35,11 +35,11 @@ def welcome():
                 name = input("")
                 if not name.isalpha():
                     print()
-                    print(Fore.RED + "Sorry your name can only contains letters")
+                    print(Fore.RED + "Sorry your name can only contains letters!")
                 
                 elif len(name) < 3:
                     print()
-                    print(Fore.RED + "Sorry your name needs to be 3 letters long or more")
+                    print(Fore.RED + "Sorry your name needs to be 3 letters long or more!")
                 
                 else:
                     print()
@@ -58,7 +58,8 @@ def welcome():
         print("Oh! that’s to bad. Maybe another time then :)")
         print()
     else:
-        print("")
+        print(Fore.RED + "Sorry your answer have to be yes or no!")
+        print()
 
 
 welcome()   
