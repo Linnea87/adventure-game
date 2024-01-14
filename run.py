@@ -24,7 +24,7 @@ def welcome():
     print()
     print()
 
-    userAnswer = input(Fore.CYAN+ "yes or no?\n\n")
+    userAnswer = input(Fore.CYAN+ "yes or no:\n\n")
     print()
     if(userAnswer == "yes"):
         print("Good! The first thing you have to do is enter your name below:")
@@ -54,7 +54,9 @@ def welcome():
         
 
     elif(userAnswer =="no"):
-        print("")
+
+        print("Oh! that’s to bad. Maybe another time then :)")
+        print()
     else:
         print("")
 
