@@ -3,7 +3,7 @@ Modules
 """
 import sys
 import os
-import pyfiglet 
+import pyfiglet
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
@@ -19,15 +19,20 @@ def welcome():
     new_str = txt1.center(80)
     print(Fore.WHITE + new_str)
     print()
-    result = pyfiglet.figlet_format("The Lost Island", font = "cybermedium" , justify="center") 
+    """ ASCII art """
+    result = pyfiglet.figlet_format(
+        "The Lost Island", font="cybermedium", justify="center")
     print(Fore.CYAN + result)
+
     txt2 = "Do you have the courage to enter this adventure?"
     new_str = txt2.center(80)
     print(Fore.WHITE + new_str)
     print()
     print()
     print()
-    
+welcome()
+
+def userAnswer():
     """
     Prompt the the user to enter a answer
     Different messages are displayed depending 
@@ -35,8 +40,12 @@ def welcome():
     Is the users answer not valid, an error message 
     with instructions is displayed
     """
-    userAnswer = input(Fore.CYAN + "yes or no:\n\n") 
-    if (userAnswer == "yes"):
+    userAnswer = input(Fore.CYAN + "yes or no:\n\n")
+    if(userAnswer == "no"):
+        print()
+        print("Oh! that's to bad. Maybe another time then :)")
+        print()
+    elif (userAnswer == "yes"):
         print()
         print("Good! The first thing you have to do is enter your name below:")
         print()
@@ -51,36 +60,28 @@ def welcome():
                 name = input("")
                 if not name.isalpha():
                     print()
-                    print(Fore.RED + "Sorry your name can only contains letters!")
+                    print(
+                        Fore.RED + "Your name can only contain letters!"
+                    )
                 elif len(name) < 3:
                     print()
-                    print(Fore.RED + "Sorry your name needs to be 3 letters long or more!")
+                    print(
+                        Fore.RED + "Your name needs to be 3 letters or more!")
                 else:
                     print()
-                    print(name + ", you are now about to begin perhaps") 
-                    print("your most exciting, fast-paced and dangerous") 
+                    print(name + ", you are now about to begin perhaps")
+                    print("your most exciting, fast-paced and dangerous")
                     print("adventure you have ever been on!")
                     input("\nSo when you feel ready to begin just hit enter!\n")
-                    break  
+                    break
             except Exception as e:
                 print(Fore.RED + f"An error occurred: {e} ")
-    elif (userAnswer == "no"):
-        print()
-        print("Oh! that's to bad. Maybe another time then :)")
-        print()
     else:
         print()
-        input(Fore.RED + "You must enter yes or no\n")    
-
-# Calls the welcome function
-welcome()
-
- 
+        input(Fore.RED + "You must enter yes or no\n")
+userAnswer()   
 
 
-
-
-
-
-
-
+def intro():
+    print(" You and your friends went on a bout trip")
+intro()
