@@ -9,6 +9,7 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
+
 def print_slow(text):
     """
     Creates a slow typing effect.
@@ -18,17 +19,19 @@ def print_slow(text):
         sys.stdout.flush()
         time.sleep(0.1)
 
+
 def input_slow(text):
-  for character in text:
-    sys.stdout.write(character)
-    sys.stdout.flush()
-    time.sleep(0.05) 
-    value = input()  
-  return value  
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+        value = input()
+        return value
 
 
 def clear():
     os.system("clear")
+
 
 def welcome():
     """
@@ -55,6 +58,7 @@ def welcome():
     print()
     time.sleep(2)
 
+
 welcome()
 
 
@@ -69,7 +73,8 @@ def userAnswer():
     userAnswer = input(Fore.CYAN + "yes or no:\n")
     if (userAnswer == "yes"):
         print()
-        print_slow("Good! The first thing you have to do is enter your name below:")
+        print_slow(
+            "Good! The first thing you have to do is enter your name below:")
         print()
         while True:
             """
@@ -92,11 +97,14 @@ def userAnswer():
                 else:
                     print()
                     print_slow(name + ", you are now about to begin perhaps\n")
-                    print_slow("your most exciting, fast-paced and dangerous\n")
+                    print_slow(
+                        "your most exciting, fast-paced and dangerous\n"
+                    )
                     print_slow("adventure you have ever been on!\n")
                     print()
                     print()
-                    input_slow("So when you feel ready to begin just hit enter!\n")
+                    input_slow(
+                        "So when you feel ready to begin just hit enter!\n")
                     break
             except Exception as e:
                 print(Fore.RED + f"An error occurred: {e} ")
@@ -104,7 +112,7 @@ def userAnswer():
         print()
         print_slow("Oh! that's to bad. Maybe another time then :)")
         print()
-        time.sleep(2) 
+        time.sleep(2)
     else:
         print('')
         input(Fore.RED + "You must enter yes or no\n")
@@ -115,8 +123,7 @@ userAnswer()
 
 
 def intro():
-        print(" You and your friends went on a bout trip")
+    print("You and your friends went on a bout trip")
+
 
 intro()
-
-
