@@ -8,6 +8,7 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
+
 def welcome():
     """
     Welcomes the user to the game and ask if the user
@@ -30,18 +31,21 @@ def welcome():
     print()
     print()
     print()
+
+
 welcome()
+
 
 def userAnswer():
     """
-    Prompt the the user to enter a answer
-    Different messages are displayed depending 
+    Prompt the the user to enter a answer.
+    Different messages are displayed depending
     on the user's answer
-    Is the users answer not valid, an error message 
+    Is the users answer not valid, an error message
     with instructions is displayed
     """
     userAnswer = input(Fore.CYAN + "yes or no:\n\n")
-    if(userAnswer == "no"):
+    if (userAnswer == "no"):
         print()
         print("Oh! that's to bad. Maybe another time then :)")
         print()
@@ -50,10 +54,10 @@ def userAnswer():
         print("Good! The first thing you have to do is enter your name below:")
         print()
         while True:
-            """ 
+            """
             Ask the user for a name. The name is required
-            if the name contains other than letters or 
-            is shorter than 3 letters, 
+            if the name contains other than letters or
+            is shorter than 3 letters,
             an error with instructions is displayed
             """
             try:
@@ -72,16 +76,20 @@ def userAnswer():
                     print(name + ", you are now about to begin perhaps")
                     print("your most exciting, fast-paced and dangerous")
                     print("adventure you have ever been on!")
-                    input("\nSo when you feel ready to begin just hit enter!\n")
+                    input("So when you feel ready to begin just hit enter!\n")
                     break
             except Exception as e:
                 print(Fore.RED + f"An error occurred: {e} ")
     else:
         print()
         input(Fore.RED + "You must enter yes or no\n")
-userAnswer()   
+
+
+userAnswer()
 
 
 def intro():
     print(" You and your friends went on a bout trip")
+
+
 intro()
