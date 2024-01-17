@@ -10,14 +10,16 @@ from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
 
-def print_slow(ltr):
+def print_slow(ltr, color=Fore.RESET):
     """
     Creates a slow typing effect.
     """
     for letter in ltr:
-        sys.stdout.write(letter)
+        sys.stdout.write(color + letter)
         sys.stdout.flush()
         time.sleep(0.1)
+        
+        
 
 
 def clear():
@@ -31,7 +33,7 @@ def welcome():
     """
     clear()
     print('')
-    print_slow("\t\t\t\tWelcome to\n")
+    print_slow("\t\t\t\tWelcome to\n", Fore.RED)
     print()
     time.sleep(1)
     """ ASCII art """
@@ -45,7 +47,7 @@ def welcome():
     time.sleep(1)
 
 
-welcome()
+
 
 
 def player_answer():
@@ -105,7 +107,7 @@ def player_answer():
         input()
 
 
-player_answer()
+
 
 
 def intro():
@@ -118,4 +120,10 @@ def intro():
     print_slow("and the boat starts to sink.\n")
 
 
-intro()
+
+def main():
+    welcome()
+    player_answer()
+    intro()
+    
+main()
