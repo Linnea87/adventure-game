@@ -18,8 +18,8 @@ def print_slow(ltr, color=Fore.RESET):
         sys.stdout.write(color + letter)
         sys.stdout.flush()
         time.sleep(0.1)
-        
-        
+
+
 def clear():
     os.system("clear")
 
@@ -59,7 +59,6 @@ def player_answer():
         print(Fore.RED + "Invalid answer, enter yes or no!")
         print()
         answer = input(">> ")
-       
     if answer == "no":
         print_slow("Oh, that's to bad! Maybe another time then :)\n")
         time.sleep(2)
@@ -72,7 +71,7 @@ def player_answer():
             "Good! The first thing you have to do is enter your name below:")
         print()
         print()
-        
+
 
 def player_name():
     """
@@ -114,11 +113,11 @@ def intro():
     print_slow("and the boat starts to sink.\n")
 
 
-
 def main():
     welcome()
     player_answer()
     player_name()
     intro()
-    
+
+
 main()
