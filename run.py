@@ -20,8 +20,6 @@ def print_slow(ltr, color=Fore.RESET):
         time.sleep(0.1)
         
         
-
-
 def clear():
     os.system("clear")
 
@@ -43,11 +41,8 @@ def welcome():
     print('')
     print_slow("\t\tDo you have the courage to enter this adventure?\n")
     print('')
-    print('')
+    print_slow("yes or no:\n")
     time.sleep(1)
-
-
-
 
 
 def player_answer():
@@ -58,56 +53,55 @@ def player_answer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    player_answer = input("yes or no:\n >> ")
+    answer = input(">> ")
     print()
-    if player_answer == "yes":
+    while answer not in ("yes", "no"):
+        print(Fore.RED + "Invalid answer, enter yes or no!")
         print()
-        print_slow(
-            "Good! The first thing you have to do is enter your name below:")
-        print()
-        print()
-        while True:
-            """
-            Ask the user for a name. The name is required
-            if the name contains other than letters or
-            is shorter than 3 letters,
-            an error with instructions is displayed
-            """
-            try:
-                name = input("")
-                if not name.isalpha():
-                    print()
-                    print(
-                        Fore.RED + "Your name can only contain letters!"
-                    )
-                elif len(name) < 3:
-                    print()
-                    print(
-                        Fore.RED + "Your name needs to be 3 letters or more!")
-                else:
-                    print()
-                    print_slow(name + ", you are now about to begin perhaps\n")
-                    print_slow(
-                        "your most exciting, fast-paced and dangerous\n")
-                    print_slow("adventure you have ever been on!\n")
-                    print_slow(
-                        "\nSo when you feel ready to begin just hit enter!\n")
-                    input()
-                    break
-            except Exception as e:
-                print(Fore.RED + f"An error occurred: {e}")
-    elif player_answer == "no":
+        answer = input(">> ")
+       
+    if answer == "no":
         print_slow("Oh, that's to bad! Maybe another time then :)\n")
         time.sleep(2)
         print()
         print()
         sys.exit()
-    else:
-        print(Fore.RED + 'Invalid answer, enter yes or no\n')
-        input()
+    elif answer == "yes":
+        print()
+        print_slow(
+            "Good! The first thing you have to do is enter your name below:")
+        print()
+        print()
+        
 
-
-
+def player_name():
+    """
+    Ask the user for a name. The name is required
+    if the name contains other than letters or
+    is shorter than 3 letters,
+    an error with instructions is displayed
+    """
+    while True:
+        try:
+            name = input("")
+            if not name.isalpha():
+                print()
+                print(Fore.RED + "Your name can only contain letters!")
+            elif len(name) < 3:
+                print()
+                print(Fore.RED + "Your name needs to be 3 letters or more!")
+            else:
+                print()
+                print_slow(name + ", you are now about to begin perhaps\n")
+                print_slow(
+                    "your most exciting, fast-paced and dangerous\n")
+                print_slow("adventure you have ever been on!\n")
+                print_slow(
+                    "So when you feel ready to begin just hit enter!\n")
+                input()
+                break
+        except Exception as e:
+            print(Fore.RED + f"An error occurred: {e}")
 
 
 def intro():
@@ -124,6 +118,7 @@ def intro():
 def main():
     welcome()
     player_answer()
+    player_name()
     intro()
     
 main()
