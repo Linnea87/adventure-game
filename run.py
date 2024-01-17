@@ -95,7 +95,7 @@ def player_answer():
             except Exception as e:
                 print(Fore.RED + f"An error occurred: {e}")
     elif player_answer == "no":
-        print_slow("\nOh, that's to bad! Maybe another time then :)")
+        print_slow("Oh, that's to bad! Maybe another time then :)\n")
         time.sleep(2)
         print()
         print()
