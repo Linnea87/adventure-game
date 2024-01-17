@@ -44,7 +44,7 @@ def welcome():
     txt1 = "Welcome to\n"
     new_str = txt1.center(80)
     print_slow(Fore.WHITE + new_str)
-    time.sleep(2)
+    time.sleep(1)
     print()
     """ ASCII art """
     result = pyfiglet.figlet_format(
@@ -56,13 +56,10 @@ def welcome():
     print()
     print()
     print()
-    time.sleep(2)
-
-
+    time.sleep(1)
 welcome()
 
-
-def userAnswer():
+def player_answer():
     """
     Prompt the user to enter a answer.
     Different messages are displayed depending
@@ -70,8 +67,8 @@ def userAnswer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    userAnswer = input(Fore.CYAN + "yes or no:\n")
-    if (userAnswer == "yes"):
+    player_answer = input(Fore.CYAN + "yes or no:\n")
+    if (player_answer == "yes"):
         print()
         print_slow(
             "Good! The first thing you have to do is enter your name below:")
@@ -108,18 +105,21 @@ def userAnswer():
                     break
             except Exception as e:
                 print(Fore.RED + f"An error occurred: {e} ")
-    elif (userAnswer == "no"):
+               
+    elif (player_answer == "no"):
         print()
         print_slow("Oh! that's to bad. Maybe another time then :)")
         print()
         time.sleep(2)
+        print()
+        sys.exit()
     else:
         print('')
         input(Fore.RED + "You must enter yes or no\n")
         print('')
 
 
-userAnswer()
+player_answer()
 
 
 def intro():
