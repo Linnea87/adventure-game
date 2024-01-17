@@ -19,6 +19,7 @@ def print_slow(ltr):
         sys.stdout.flush()
         time.sleep(0.1)
 
+
 def clear():
     os.system("clear")
 
@@ -43,6 +44,7 @@ def welcome():
     print('')
     time.sleep(1)
 
+
 welcome()
 
 
@@ -62,7 +64,6 @@ def player_answer():
             "Good! The first thing you have to do is enter your name below:")
         print()
         print()
-        
         while True:
             """
             Ask the user for a name. The name is required
@@ -92,29 +93,28 @@ def player_answer():
                     input()
                     break
             except Exception as e:
-                   print(Fore.RED + f"An error occurred: {e}")
-    
+                print(Fore.RED + f"An error occurred: {e}")
     elif player_answer == "no":
         print_slow("\nOh, that's to bad! Maybe another time then :)")
         time.sleep(2)
         print()
         print()
         sys.exit()
-    else: 
+    else:
         print(Fore.RED + 'Invalid answer, enter yes or no\n')
         input()
-  
-    
+
 
 player_answer()
 
 
 def intro():
     clear()
-    print_slow("What was supposed to be a peaceful and delightful boat trip at sea\n") 
+    print_slow(
+        "What was supposed to be a peaceful and delightful boat trip at sea\n")
     print_slow("turned out to be the opposite.\n")
     print_slow("After weeks lost at sea a furocius storm hits the boat.\n")
-    print_slow("Powerful waves and heavy rain destroys parts of your boat\n") 
+    print_slow("Powerful waves and heavy rain destroys parts of your boat\n")
     print_slow("and the boat starts to sink.\n")
 
 
