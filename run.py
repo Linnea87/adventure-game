@@ -56,7 +56,7 @@ def player_answer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    answer = input(">> ")
+    answer = input(">> \n")
     print()
     while answer not in ("yes", "no"):
         print(Fore.RED + "Invalid answer, enter yes or no!")
@@ -85,7 +85,7 @@ def player_name():
     """
     while True:
         try:
-            name = input("")
+            name = input(">> \n")
             if not name.isalpha():
                 print()
                 print(Fore.RED + "Your name can only contain letters!")
@@ -100,7 +100,7 @@ def player_name():
                 print_slow("adventure you have ever been on!\n")
                 print_slow(
                     "So when you feel ready to begin just hit enter!\n")
-                input()
+                input("\n")
                 break
         except Exception as e:
             print(Fore.RED + f"An error occurred: {e}")
