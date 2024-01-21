@@ -12,7 +12,7 @@ colorama.init(autoreset=True)
 
 def print_slow(ltr, color=Fore.RESET):
     """
-    Creates a slow typing effect.
+    Creates a slow typing effect, with the options to change the text color.
     """
     for letter in ltr:
         sys.stdout.write(color + letter)
@@ -21,6 +21,9 @@ def print_slow(ltr, color=Fore.RESET):
 
 
 def clear():
+    """
+    This function clears the screen from written text.
+    """
     os.system("clear")
 
 
@@ -31,7 +34,7 @@ def welcome():
     """
     clear()
     print('')
-    print_slow("\t\t\t\tWelcome to\n", Fore.RED)
+    print_slow("\t\t\t\tWelcome to\n")
     print()
     time.sleep(1)
     """ ASCII art """
@@ -41,7 +44,7 @@ def welcome():
     print('')
     print_slow("\t\tDo you have the courage to enter this adventure?\n")
     print('')
-    print_slow("yes or no:\n")
+    print_slow("yes or no:\n", Fore.CYAN)
     time.sleep(1)
 
 
@@ -75,7 +78,7 @@ def player_answer():
 
 def player_name():
     """
-    Ask the user for a name. The name is required
+    Prompt the user to enter a name. The name is required,
     if the name contains other than letters or
     is shorter than 3 letters,
     an error with instructions is displayed
@@ -104,6 +107,9 @@ def player_name():
 
 
 def intro():
+    """
+    The game adveture starts here.
+    """
     clear()
     print_slow(
         "What was supposed to be a peaceful and delightful boat trip at sea\n")
@@ -112,12 +118,40 @@ def intro():
     print_slow("Powerful waves and heavy rain destroys parts of your boat\n")
     print_slow("and the boat starts to sink.\n")
 
+def chapter_1():
+    print()
+  
+def chapter_2():  
+    print()
+
+def chapter_3():
+    print()
+
+def chapter_4():
+    print()
+    
+def end_scen_1():
+    print()
+
+def end_scen_2():
+    print()
+
 
 def main():
+    """
+    This function calls all the other functions.
+    """
     welcome()
     player_answer()
     player_name()
     intro()
+    chapter_1()
+    chapter_2()
+    chapter_3()
+    chapter_4()
+    end_scen_1()
+    end_scen_2()
+    
 
 
 main()
