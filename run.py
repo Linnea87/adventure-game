@@ -18,7 +18,7 @@ def print_slow(ltr, color=Fore.RESET):
         sys.stdout.write(color + letter)
         sys.stdout.flush()
         time.sleep(0.1)
-
+        
 
 def clear():
     """
@@ -33,7 +33,7 @@ def welcome():
     have the courage to play.
     """
     clear()
-    print('')
+    print()
     print_slow("\t\t\t\tWelcome to\n")
     print()
     time.sleep(1)
@@ -41,11 +41,12 @@ def welcome():
     result = pyfiglet.figlet_format(
         "The Lost Island", font="cybermedium", justify="center")
     print(Fore.CYAN + result)
-    print('')
     print_slow("\t\tDo you have the courage to enter this adventure?\n")
-    print('')
-    print_slow("yes or no:\n", Fore.CYAN)
+    print()
     time.sleep(1)
+    print_slow("yes or no:\n", Fore.CYAN)
+    print()
+    
 
 
 def player_answer():
@@ -56,12 +57,12 @@ def player_answer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    answer = input(">> ")
+    answer = input(Fore.YELLOW + ">> ")
     print()
     while answer not in ("yes", "no"):
         print(Fore.RED + "Invalid answer, enter yes or no!")
         print()
-        answer = input(">> ")
+        answer = input(Fore.YELLOW + ">> ")
     if answer == "no":
         print_slow("Oh, that's to bad! Maybe another time then :)\n")
         time.sleep(2)
