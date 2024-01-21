@@ -65,7 +65,7 @@ def player_answer():
         answer = input(Fore.YELLOW + ">> ")
     if answer == "no":
         print_slow("Oh, that's to bad! Maybe another time then :)\n")
-        time.sleep(2)
+        time.sleep(1)
         print()
         print()
         sys.exit()
@@ -86,7 +86,7 @@ def player_name():
     """
     while True:
         try:
-            name = input(">> ")
+            name = input(Fore.YELLOW + ">> ")
             if not name.isalpha():
                 print()
                 print(Fore.RED + "Your name can only contain letters!")
