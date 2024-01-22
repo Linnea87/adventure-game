@@ -112,12 +112,19 @@ def intro():
     The game adveture starts here.
     """
     clear()
-    print_slow(
-        "What was supposed to be a peaceful and delightful boat trip at sea\n")
-    print_slow("turned out to be the opposite.\n")
-    print_slow("After weeks lost at sea a furocius storm hits the boat.\n")
-    print_slow("Powerful waves and heavy rain destroys parts of your boat\n")
-    print_slow("and the boat starts to sink.\n")
+    print_slow("What was supposed to be a quiet and ")
+    print_slow("lovely boating holiday\nout at sea ")
+    print_slow("with some of your closest friends, ")
+    print_slow("turned out\nto be the complete opposite!\n")
+    print()
+    print_slow("After a few days, you end up in the eye of the worst storm\n")
+    print_slow("you've ever experienced. ")
+    print_slow("The heavy rain and the powerful waves\n")
+    print_slow("destroy parts of your boat and it slowly begins to sink.\n")
+    print_slow("In a panic, you try to get to the lifeboat ")
+    print_slow("to save you\nand your friends, ")
+    print_slow("when suddenly you collapse\nand everything goes dark!\n")
+
 
 def chapter_1():
     print()
