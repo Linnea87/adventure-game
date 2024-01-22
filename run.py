@@ -131,7 +131,16 @@ def intro():
 
 def chapter_1():
     clear()
-    print_slow("- come on " + name + " you can't die and leave me alone here!")
+    print()
+    print_slow("- come on " + name + " you can't die and leave me alone here!\n" + Fore.BLUE)
+    time.sleep(1)
+    print()
+    print_slow("You hear a voice far off in the distance ") 
+    print_slow("calling\nout to you and you begin to regain consciousness.\n")
+    print_slow("Slowly you open your eyes and see your friend\n") 
+    print_slow("Oliwer leaning over you.\n")
+    print()
+    print_slow("- what happened? where are we?\n" + Fore.YELLOW)
   
 def chapter_2():  
     print()
