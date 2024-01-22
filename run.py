@@ -84,8 +84,10 @@ def player_name():
     is shorter than 3 letters,
     an error with instructions is displayed
     """
+   
     while True:
         try:
+            global name 
             name = input(Fore.YELLOW + ">> ")
             if not name.isalpha():
                 print()
@@ -124,10 +126,12 @@ def intro():
     print_slow("In a panic, you try to get to the lifeboat ")
     print_slow("to save you\nand your friends, ")
     print_slow("when suddenly you collapse\nand everything goes dark!\n")
+    time.sleep(1)
 
 
 def chapter_1():
-    print()
+    clear()
+    print_slow("- come on " + name + " you can't die and leave me alone here!")
   
 def chapter_2():  
     print()
