@@ -130,7 +130,7 @@ def intro():
     time.sleep(1)
 
 
-def chapter_1():
+def the_waking_up():
     clear()
     print()
     print_slow("- come on " + name + " you can't die and leave me alone here!\n", Fore.BLUE)
@@ -148,7 +148,7 @@ def chapter_1():
     time.sleep(1)
         
     
-def chapter_2():
+def the_stranded_friends():
     clear()
     print()
     print_slow("You sit up slowly and your head aches.\n")
@@ -169,15 +169,37 @@ def chapter_2():
     time.sleep(1)
     print(Fore.GREEN + "Press h to take Oliwers hand\n")
     input(Fore.YELLOW + ">> ")
+  
+def the_shelter(): 
+    clear()
+    print()
     print_slow("- What do you think " + name + ", should we try to build\n", Fore.BLUE)
     print_slow("  a shelter here on the beach or should we\n", Fore.BLUE)
     print_slow("  go further into the island to seek shelter for the night?\n", Fore.BLUE)
-  
-def chapter_3():  
     print()
-
+    print(Fore.GREEN + "build or seek:\n")
+    choice = input(Fore.YELLOW + ">> ")
+    while choice not in ("build", "seek"):
+        print()
+        print(Fore.RED + "Invalid choice, you must choose build or seek!")
+        print()
+        choice = input(Fore.YELLOW + ">> ")
+        print()
+    if choice == "build":
+        print()
+        print_slow("You and Oliwer start looking for driftwood\n") 
+        print_slow("that you can use to build a shelter.\n")
+        print_slow("After an hour of searching you start to get hungry\n")
+        print_slow("and realize that it is hopeless to find any driftwood\n")
+        print_slow("Finally you decide to go further into the island to look\n")
+        print_slow("for something to eat and find some sort of shelter for the night.\n")
+    elif choice == "seek":
+        print_slow() 
+   
 def chapter_4():
     print()
+    
+    
 
 def chapter_5():
     print()
@@ -197,9 +219,9 @@ def main():
     player_answer()
     player_name()
     intro()
-    chapter_1()
-    chapter_2()
-    chapter_3()
+    the_waking_up()
+    the_stranded_friends()
+    the_shelter()
     chapter_4()
     chapter_5()
     end_scen_1()
