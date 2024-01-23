@@ -70,6 +70,7 @@ def player_answer():
         print()
         sys.exit()
     elif answer == "yes":
+        clear()
         print()
         print_slow(
             "Good! The first thing you have to do is enter your name below:")
@@ -96,6 +97,7 @@ def player_name():
                 print()
                 print(Fore.RED + "Your name needs to be 3 letters or more!")
             else:
+                clear()
                 print()
                 print_slow(name + ", you are now about to begin perhaps\n")
                 print_slow(
@@ -162,6 +164,7 @@ def the_stranded_friends():
     print()
     print(Fore.GREEN + "Press t for talk to Oliwer:\n")
     input(Fore.YELLOW + ">> ")
+    clear()
     print()
     print_slow("- what happened? where are we?\n", Fore.YELLOW)
     time.sleep(1)
