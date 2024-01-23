@@ -199,6 +199,7 @@ def the_shelter():
         choice = input(Fore.YELLOW + ">> ")
         print()
     if choice == "build":
+        clear()
         print()
         print_slow("You and Oliwer start looking for driftwood\n") 
         print_slow("that you can use to build a shelter.\n")
