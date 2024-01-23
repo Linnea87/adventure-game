@@ -44,7 +44,7 @@ def welcome():
     print_slow("\t\tDo you have the courage to enter this adventure?\n")
     print()
     time.sleep(1)
-    print_slow("yes or no:\n", Fore.CYAN)
+    print(Fore.GREEN + "yes or no:\n")
     print()
     
 
@@ -114,6 +114,7 @@ def intro():
     The game adveture starts here.
     """
     clear()
+    print()
     print_slow("What was supposed to be a quiet and ")
     print_slow("lovely boating holiday\nout at sea ")
     print_slow("with some of your closest friends, ")
@@ -137,20 +138,48 @@ def chapter_1():
     print()
     print_slow("You hear a voice far off in the distance ") 
     print_slow("calling\nout to you and you begin to regain consciousness.\n")
+    time.sleep(1)
+    print()
+    print(Fore.GREEN + "Press w for waking up:\n")
+    input(Fore.YELLOW + ">> ")
+    print()
     print_slow("Slowly you open your eyes and see your friend\n") 
-    print_slow("Oliwer leaning over you.\n")
+    print_slow("Oliwer leaning over you!\n")
+    time.sleep(1)
+        
+    
+def chapter_2():
+    clear()
+    print()
+    print_slow("You sit up slowly and your head aches.\n")
+    print_slow("When you bring your hand to your head, you feel a bump.\n")
+    print()
+    print(Fore.GREEN + "Press t for talk to Oliwer:\n")
+    input(Fore.YELLOW + ">> ")
     print()
     print_slow("- what happened? where are we?\n", Fore.YELLOW)
+    time.sleep(1)
     print()
-    
+    print_slow("- The boat sank. When I woke up I found you lying a few meters away.\n", Fore.BLUE)
+    print_slow("  I ran as fast as I could to give you first aid.\n", Fore.BLUE)
+    print_slow("  The waves seem to have driven us to some sort of island.\n", Fore.BLUE)
+    print()
+    print_slow("Oliwer extends his hand to help you up\n")
+    print()
+    time.sleep(1)
+    print(Fore.GREEN + "Press h to take Oliwers hand\n")
+    input(Fore.YELLOW + ">> ")
+    print_slow("- What do you think " + name + ", should we try to build\n", Fore.BLUE)
+    print_slow("  a shelter here on the beach or should we\n", Fore.BLUE)
+    print_slow("  go further into the island to seek shelter for the night?\n", Fore.BLUE)
   
-def chapter_2():  
-    print()
-
-def chapter_3():
+def chapter_3():  
     print()
 
 def chapter_4():
+    print()
+
+def chapter_5():
     print()
     
 def end_scen_1():
@@ -172,6 +201,7 @@ def main():
     chapter_2()
     chapter_3()
     chapter_4()
+    chapter_5()
     end_scen_1()
     end_scen_2()
     
