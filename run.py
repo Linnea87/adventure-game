@@ -131,6 +131,9 @@ def intro():
 
 
 def the_waking_up():
+    """
+    The user must interact so that the story progresses.
+    """
     clear()
     print()
     print_slow("- come on " + name + " you can't die and leave me alone here!\n", Fore.BLUE)
@@ -149,6 +152,9 @@ def the_waking_up():
         
     
 def the_stranded_friends():
+    """
+    The user must interact so that the story progresses.
+    """
     clear()
     print()
     print_slow("You sit up slowly and your head aches.\n")
@@ -171,6 +177,13 @@ def the_stranded_friends():
     input(Fore.YELLOW + ">> ")
   
 def the_shelter(): 
+    """
+    The user most enter a choice. 
+    Each choice has different stories 
+    but both lead the user further in the game.
+    Are the choice not valid an error message
+    with instructions is displayed
+    """
     clear()
     print()
     print_slow("- What do you think " + name + ", should we try to build\n", Fore.BLUE)
