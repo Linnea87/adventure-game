@@ -204,8 +204,9 @@ def the_shelter():
         print_slow("that you can use to build a shelter.\n")
         print_slow("After an hour of searching you start to get hungry\n")
         print_slow("and realize that it is hopeless to find any driftwood\n")
-        print_slow("Finally you decide to go further into the island to look\n")
-        print_slow("for something to eat and find some sort of shelter for the night.\n")
+        print_slow("Finally you decide to go further into the island.\n")
+        print_slow("You find edible berries and a cave\n")
+        print_slow("where you seek shelter for the night\n")
     elif choice == "seek":
         print_slow() 
    
