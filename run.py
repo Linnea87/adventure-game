@@ -228,8 +228,49 @@ def the_winding_path():
     )
 
    
-def chapter_4():
-    print(".....")
+def the_serch_for_water():
+    clear()
+    print_slow("\n- " + name + " our drinking water has run out\n\n!", Fore.BLUE)
+    print_slow(
+        "After days without rain, you start\n" 
+        "looking for sources of potable water.\n"
+        "When you have hiked for half the day,\n" 
+        "you will arrive at a mountain cave.\n"
+    )
+    print_slow(
+        "- Do we really have to go in there " + name + " ?\n"
+        "It's jet black.\n"
+        "Isn't it better to try to walk\n"
+        "around the cave instead?\n\n", Fore.BLUE
+    )
+    time.sleep(1)
+    print(Fore.GREEN + "walk in or walk around?\n")
+    input(Fore.YELLOW + ">> ")
+    while input not in ("walk in", "walk around"):
+        print(Fore.RED + "\nInvalid answer, enter walk in or walk around\n")
+        input(Fore.YELLOW + ">> ")
+    if input == "walk in":
+        return mountain_cave()
+    elif input == "walk around":
+        return the_field()
+
+
+def mountain_cave():
+    clear()
+    print_slow(
+        "You enter the cave and after a while\n"
+        "your eyes start to get used to the darkness\n"
+        "You walk along the cave walls to move forward.\n\n"
+    )
+    print_slow("")
+    
+    
+
+def the_field():
+    print()
+
+    
+    
 
 def chapter_5():
     print()
@@ -252,7 +293,7 @@ def main():
     intro()
     the_stranded_friends()
     the_shelter()
-    chapter_4()
+    the_serch_for_water()
     chapter_5()
     end_scen_1()
     end_scen_2()
