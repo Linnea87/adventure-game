@@ -18,7 +18,7 @@ def print_slow(ltr, color=Fore.RESET):
         sys.stdout.write(color + letter)
         sys.stdout.flush()
         time.sleep(0.1)
-        
+
 
 def clear():
     """
@@ -42,7 +42,7 @@ def welcome():
     print_slow("\t\tDo you have the courage to enter this adventure?\n\n")
     time.sleep(1)
     print(Fore.GREEN + "yes or no:\n")
-    
+
 
 def player_answer():
     """
@@ -63,7 +63,9 @@ def player_answer():
     elif answer == "yes":
         clear()
         print_slow(
-            "\nGood! The first thing you have to do is enter your name below:\n\n")
+            "\nGood! The first thing you have to do"
+            "is enter your name below:\n\n"
+        )
 
 
 def player_name():
@@ -75,7 +77,7 @@ def player_name():
     """
     while True:
         try:
-            global name 
+            global name
             name = input(Fore.YELLOW + ">> ")
             if not name.isalpha():
                 print(Fore.RED + "\nYour name can only contain letters!")
@@ -86,8 +88,9 @@ def player_name():
                 print_slow(
                     "\n" + name + ", you are now about to begin perhaps\n"
                     "your most exciting, fast-paced and dangerous\n"
-                    "adventure you have ever been on!\n\n")
-                input("So when you feel ready to begin just hit enter!" )
+                    "adventure you have ever been on!\n\n"
+                )
+                input("So when you feel ready to begin just hit enter!")
                 break
         except Exception as e:
             print(Fore.RED + f"An error occurred: {e}")
@@ -95,7 +98,7 @@ def player_name():
 
 def intro():
     """
-    The adventure game starts with an exciting intro 
+    The adventure game starts with an exciting intro
     using the print_slow function
     """
     clear()
@@ -111,44 +114,51 @@ def intro():
         "In a panic, you try to get to the lifeboat "
         "to save you\nand your friends, "
         "when suddenly you collapse\n"
-        "and everything goes dark!\n")
+        "and everything goes dark!\n"
+    )
     time.sleep(1)
 
 
 def the_stranded_friends():
     """
-    With help of the input function, the user must 
+    With help of the input function, the user must
     interact so that the story progresses.
     """
     clear()
-    print_slow("\n- come on " + name + ", you can't die and leave me alone here!\n", Fore.BLUE)
+    print_slow(
+        "\n- come on " + name + ", you can't die and leave "
+        "me alone here!\n", Fore.BLUE
+    )
     time.sleep(1)
     print_slow(
-        "\nYou hear a voice far off in the distance calling\n" 
-        "out to you and you begin to regain consciousness.\n")
+        "\nYou hear a voice far off in the distance calling\n"
+        "out to you and you begin to regain consciousness.\n"
+    )
     time.sleep(1)
-    input(Fore.GREEN + "\nPress w to wake up: " )
+    input(Fore.GREEN + "\nPress w to wake up: ")
     clear()
     print_slow(
         "\nSlowly you open your eyes and see your friend\n"
         "Oliwer leaning over you!\n\n"
         "You sit up slowly and your head aches.\n"
-        "When you bring your hand to your head,\n" 
-        "you feel a bump.\n")
+        "When you bring your hand to your head,\n"
+        "you feel a bump.\n"
+    )
     time.sleep(1)
-    input(Fore.GREEN + "\nPress t to talk with Oliwer: " )
+    input(Fore.GREEN + "\nPress t to talk with Oliwer: ")
     clear()
     print_slow("\n- what happened? where are we?\n\n", Fore.YELLOW)
     print_slow(
-        "- The boat sank. When I woke up I found you lying a few meters away.\n"
+        "- The boat sank. When I woke up I found you"
+        "  lying a few meters away.\n"
         "  I ran as fast as I could to give you first aid.\n"
         "  The waves seem to have driven us to"
         "  some sort of island.\n\n", Fore.BLUE
     )
     print_slow("Oliwer extends his hand to help you up\n")
-    input(Fore.GREEN+ "\nPress h to take Oliwers hand: " )
-    
-    
+    input(Fore.GREEN + "\nPress h to take Oliwers hand: ")
+
+
 def the_shelter():
     """
     The user most enter a choice.
@@ -178,20 +188,42 @@ def the_shelter():
                 "and realize that it is hopeless to find any driftwood.\n"
                 "Finally you decide to go further into the island.\n"
                 "You find edible berries and a cave\n"
-                "where you seek shelter for the night\n")
+                "where you seek shelter for the night\n"
+            )
     elif choice == "seek":
-        print_slow("")
-   
+        print_slow(
+            "You and Oliwer start walking further into "
+            "the island and end up on a winding path.\n\n"
+        )
+        print_slow(
+            "After what feels like an eternity, you have\n"
+            "finally managed to fight your\n"
+            "way out of the winding path.\n"
+            "Tired and hungry, you are greeted by"
+            "the most beautiful view you have ever seen!\n"
+            "Here there are plants of all kinds and colors.\n"
+            "Before moving on to seek shelter, you take with\n"
+            "you as many edible berries as you can fit"
+            "in your pockets.\n\n"
+        )
+        print_slow(
+            "It's getting dark and eventually you find a cave\n"
+            "in which you take shelter for the night and eat\n"
+            "your berries which satisfy some of your hunger."
+        )
+
+
 def chapter_4():
     print()
-    
-    
+
 
 def chapter_5():
     print()
-    
+
+
 def end_scen_1():
     print()
+
 
 def end_scen_2():
     print()
@@ -211,7 +243,6 @@ def main():
     chapter_5()
     end_scen_1()
     end_scen_2()
-    
 
 
 main()
