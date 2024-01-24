@@ -33,21 +33,16 @@ def welcome():
     have the courage to play.
     """
     clear()
-    print()
-    print_slow("\t\t\t\tWelcome to\n")
-    print()
+    print_slow("\n\t\t\t\tWelcome to\n\n")
     time.sleep(1)
     """ ASCII art """
     result = pyfiglet.figlet_format(
         "The Lost Island", font="cybermedium", justify="center")
     print(Fore.CYAN + result)
-    print_slow("\t\tDo you have the courage to enter this adventure?\n")
-    print()
+    print_slow("\t\tDo you have the courage to enter this adventure?\n\n")
     time.sleep(1)
     print(Fore.GREEN + "yes or no:\n")
-    print()
     
-
 
 def player_answer():
     """
@@ -58,24 +53,17 @@ def player_answer():
     with instructions is displayed
     """
     answer = input(Fore.YELLOW + ">> ")
-    print()
     while answer not in ("yes", "no"):
-        print(Fore.RED + "Invalid answer, enter yes or no!")
-        print()
+        print(Fore.RED + "\nInvalid answer, enter yes or no!\n")
         answer = input(Fore.YELLOW + ">> ")
     if answer == "no":
-        print_slow("Oh, that's to bad! Maybe another time then :)\n")
+        print_slow("\nOh, that's to bad! Maybe another time then :)\n\n")
         time.sleep(1)
-        print()
-        print()
         sys.exit()
     elif answer == "yes":
         clear()
-        print()
         print_slow(
-            "Good! The first thing you have to do is enter your name below:")
-        print()
-        print()
+            "\nGood! The first thing you have to do is enter your name below:\n\n")
 
 
 def player_name():
@@ -85,27 +73,21 @@ def player_name():
     is shorter than 3 letters,
     an error with instructions is displayed
     """
-   
     while True:
         try:
             global name 
             name = input(Fore.YELLOW + ">> ")
             if not name.isalpha():
-                print()
-                print(Fore.RED + "Your name can only contain letters!")
+                print(Fore.RED + "\nYour name can only contain letters!")
             elif len(name) < 3:
-                print()
-                print(Fore.RED + "Your name needs to be 3 letters or more!")
+                print(Fore.RED + "\nYour name needs to be 3 letters or more!")
             else:
                 clear()
-                print()
-                print_slow(name + ", you are now about to begin perhaps\n")
                 print_slow(
-                    "your most exciting, fast-paced and dangerous\n")
-                print_slow("adventure you have ever been on!\n")
-                print_slow(
-                    "So when you feel ready to begin just hit enter!\n")
-                input()
+                    "\n" + name + ", you are now about to begin perhaps\n"
+                    "your most exciting, fast-paced and dangerous\n"
+                    "adventure you have ever been on!\n\n")
+                input("So when you feel ready to begin just hit enter!" )
                 break
         except Exception as e:
             print(Fore.RED + f"An error occurred: {e}")
@@ -113,106 +95,92 @@ def player_name():
 
 def intro():
     """
-    The game adveture starts here.
+    The adventure game starts with an exciting intro 
+    using the print_slow function
     """
     clear()
-    print()
-    print_slow("What was supposed to be a quiet and ")
-    print_slow("lovely boating holiday\nout at sea ")
-    print_slow("with some of your closest friends, ")
-    print_slow("turned out\nto be the complete opposite!\n")
-    print()
-    print_slow("After a few days, you end up in the eye of the worst storm\n")
-    print_slow("you've ever experienced. ")
-    print_slow("The heavy rain and the powerful waves\n")
-    print_slow("destroy parts of your boat and it slowly begins to sink.\n")
-    print_slow("In a panic, you try to get to the lifeboat ")
-    print_slow("to save you\nand your friends, ")
-    print_slow("when suddenly you collapse\nand everything goes dark!\n")
+    print_slow(
+        "\nWhat was supposed to be a quiet and "
+        "lovely boating holiday\nout at sea "
+        "with some of your closest friends, turned out\n"
+        "to be the complete opposite!\n\n"
+        "After a few days, you end up in the eye of the worst storm\n"
+        "you've ever experienced. "
+        "The heavy rain and the powerful waves\n"
+        "destroy parts of your boat and it slowly begins to sink.\n"
+        "In a panic, you try to get to the lifeboat "
+        "to save you\nand your friends, "
+        "when suddenly you collapse\n"
+        "and everything goes dark!\n")
     time.sleep(1)
 
 
-def the_waking_up():
-    """
-    The user must interact so that the story progresses.
-    """
-    clear()
-    print()
-    print_slow("- come on " + name + " you can't die and leave me alone here!\n", Fore.BLUE)
-    time.sleep(1)
-    print()
-    print_slow("You hear a voice far off in the distance ") 
-    print_slow("calling\nout to you and you begin to regain consciousness.\n")
-    time.sleep(1)
-    print()
-    print(Fore.GREEN + "Press w for waking up:\n")
-    input(Fore.YELLOW + ">> ")
-    print()
-    print_slow("Slowly you open your eyes and see your friend\n") 
-    print_slow("Oliwer leaning over you!\n")
-    time.sleep(1)
-        
-    
 def the_stranded_friends():
     """
-    The user must interact so that the story progresses.
+    With help of the input function, the user must 
+    interact so that the story progresses.
     """
     clear()
-    print()
-    print_slow("You sit up slowly and your head aches.\n")
-    print_slow("When you bring your hand to your head, you feel a bump.\n")
-    print()
-    print(Fore.GREEN + "Press t for talk to Oliwer:\n")
-    input(Fore.YELLOW + ">> ")
-    clear()
-    print()
-    print_slow("- what happened? where are we?\n", Fore.YELLOW)
+    print_slow("\n- come on " + name + ", you can't die and leave me alone here!\n", Fore.BLUE)
     time.sleep(1)
-    print()
-    print_slow("- The boat sank. When I woke up I found you lying a few meters away.\n", Fore.BLUE)
-    print_slow("  I ran as fast as I could to give you first aid.\n", Fore.BLUE)
-    print_slow("  The waves seem to have driven us to some sort of island.\n", Fore.BLUE)
-    print()
+    print_slow(
+        "\nYou hear a voice far off in the distance calling\n" 
+        "out to you and you begin to regain consciousness.\n")
+    time.sleep(1)
+    input(Fore.GREEN + "\nPress w to wake up: " )
+    clear()
+    print_slow(
+        "\nSlowly you open your eyes and see your friend\n"
+        "Oliwer leaning over you!\n\n"
+        "You sit up slowly and your head aches.\n"
+        "When you bring your hand to your head,\n" 
+        "you feel a bump.\n")
+    time.sleep(1)
+    input(Fore.GREEN + "\nPress t to talk with Oliwer: " )
+    clear()
+    print_slow("\n- what happened? where are we?\n\n", Fore.YELLOW)
+    print_slow(
+        "- The boat sank. When I woke up I found you lying a few meters away.\n"
+        "  I ran as fast as I could to give you first aid.\n"
+        "  The waves seem to have driven us to"
+        "  some sort of island.\n\n", Fore.BLUE
+    )
     print_slow("Oliwer extends his hand to help you up\n")
-    print()
-    time.sleep(1)
-    print(Fore.GREEN + "Press h to take Oliwers hand\n")
-    input(Fore.YELLOW + ">> ")
-  
-def the_shelter(): 
+    input(Fore.GREEN+ "\nPress h to take Oliwers hand: " )
+    
+    
+def the_shelter():
     """
-    The user most enter a choice. 
-    Each choice has different stories 
+    The user most enter a choice.
+    Each choice has different stories
     but both lead the user further in the game.
     Are the choice not valid an error message
     with instructions is displayed
     """
     clear()
-    print()
-    print_slow("- What do you think " + name + ", should we try to build\n", Fore.BLUE)
-    print_slow("  a shelter here on the beach or should we\n", Fore.BLUE)
-    print_slow("  go further into the island to seek shelter for the night?\n", Fore.BLUE)
+    print_slow(
+        "\n- What do you think " + name + ", should we try to build\n"
+        "  a shelter here on the beach or should we\n"
+        "  go further into the island to seek\n"
+        "  shelter for the night?\n", Fore.BLUE)
     print()
     print(Fore.GREEN + "build or seek:\n")
     choice = input(Fore.YELLOW + ">> ")
     while choice not in ("build", "seek"):
-        print()
-        print(Fore.RED + "Invalid choice, you must choose build or seek!")
-        print()
+        print(Fore.RED + "\nInvalid choice, you must choose build or seek!\n")
         choice = input(Fore.YELLOW + ">> ")
-        print()
     if choice == "build":
         clear()
-        print()
-        print_slow("You and Oliwer start looking for driftwood\n") 
-        print_slow("that you can use to build a shelter.\n")
-        print_slow("After an hour of searching you start to get hungry\n")
-        print_slow("and realize that it is hopeless to find any driftwood\n")
-        print_slow("Finally you decide to go further into the island.\n")
-        print_slow("You find edible berries and a cave\n")
-        print_slow("where you seek shelter for the night\n")
+        print_slow(
+                "\nYou and Oliwer start looking for driftwood\n"
+                "that you can use to build a shelter.\n"
+                "After an hour of searching you start to get hungry\n"
+                "and realize that it is hopeless to find any driftwood.\n"
+                "Finally you decide to go further into the island.\n"
+                "You find edible berries and a cave\n"
+                "where you seek shelter for the night\n")
     elif choice == "seek":
-        print_slow() 
+        print_slow("")
    
 def chapter_4():
     print()
@@ -237,7 +205,6 @@ def main():
     player_answer()
     player_name()
     intro()
-    the_waking_up()
     the_stranded_friends()
     the_shelter()
     chapter_4()
