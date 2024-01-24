@@ -63,7 +63,7 @@ def player_answer():
     elif answer == "yes":
         clear()
         print_slow(
-            "\nGood! The first thing you have to do"
+            "\nGood! The first thing you have to do "
             "is enter your name below:\n\n"
         )
 
@@ -149,11 +149,11 @@ def the_stranded_friends():
     clear()
     print_slow("\n- what happened? where are we?\n\n", Fore.YELLOW)
     print_slow(
-        "- The boat sank. When I woke up I found you"
+        "- The boat sank. When I woke up I found you\n"
         "  lying a few meters away.\n"
         "  I ran as fast as I could to give you first aid.\n"
-        "  The waves seem to have driven us to"
-        "  some sort of island.\n\n", Fore.BLUE
+        "  The waves seem to have driven us to some\n"
+        "  sort of island.\n\n", Fore.BLUE
     )
     print_slow("Oliwer extends his hand to help you up\n")
     input(Fore.GREEN + "\nPress h to take Oliwers hand: ")
@@ -162,8 +162,7 @@ def the_stranded_friends():
 def the_shelter():
     """
     The user most enter a choice.
-    Each choice has different stories
-    but both lead the user further in the game.
+    Each choice leads to different outputs in the game.
     Are the choice not valid an error message
     with instructions is displayed
     """
@@ -180,46 +179,60 @@ def the_shelter():
         print(Fore.RED + "\nInvalid choice, you must choose build or seek!\n")
         choice = input(Fore.YELLOW + ">> ")
     if choice == "build":
-        clear()
-        print_slow(
-                "\nYou and Oliwer start looking for driftwood\n"
-                "that you can use to build a shelter.\n"
-                "After an hour of searching you start to get hungry\n"
-                "and realize that it is hopeless to find any driftwood.\n"
-                "Finally you decide to go further into the island.\n"
-                "You find edible berries and a cave\n"
-                "where you seek shelter for the night\n"
-            )
+        return the_beach()
     elif choice == "seek":
-        print_slow(
-            "You and Oliwer start walking further into "
-            "the island and end up on a winding path.\n\n"
-        )
-        print_slow(
-            "After what feels like an eternity, you have\n"
-            "finally managed to fight your\n"
-            "way out of the winding path.\n"
-            "Tired and hungry, you are greeted by"
-            "the most beautiful view you have ever seen!\n"
-            "Here there are plants of all kinds and colors.\n"
-            "Before moving on to seek shelter, you take with\n"
-            "you as many edible berries as you can fit"
-            "in your pockets.\n\n"
-        )
-        print_slow(
-            "It's getting dark and eventually you find a cave,\n"
-            "in which you take shelter for the night and eat\n"
-            "your berries which satisfy some of your hunger."
-        )
+        return the_winding_path()
 
 
+def the_beach():
+    print_slow(
+        "\nYou and Oliwer start looking for driftwood\n"
+        "that you can use to build a shelter.\n")
+    print_slow("- " + name + " come quickly and see what I found!\n\n", Fore.BLUE)
+    input(Fore.GREEN + "press r to run to Oliwer: ")
+    clear()
+    print_slow(
+        "\nThere in the water it floats around the" 
+        "most beautiful driftwood you've ever seen\n!")
+    input(Fore.GREEN + "press w to wade into the water")
+    print_slow(
+        "After what feels like an eternity, you have managed\n" 
+        "to collect the driftwood that was floating around,\n" 
+        "and built your shelter for the night.\n"
+    )
+
+
+def the_winding_path():
+    clear()
+    print_slow(
+        "\nYou and Oliwer start walking further into "
+        "the island and end up on a winding path.\n"
+        "After what feels like an eternity, you have\n"
+        "finally managed to fight your way out\n\n"
+    )
+    print_slow("- " + name + " look!\n\n", Fore.BLUE)
+    input(Fore.GREEN + "Press l to look where Oliwer is pointing: ")
+    clear()
+    print_slow( 
+        "\nThere are plants of all kinds and colors.\n"
+        "And lots of different kind of berries.\n\n")
+    input(Fore.GREEN + "press b to pick berries: ")    
+    clear()
+    print_slow(
+        "\nWhen you have picked your pockets\n" 
+        "full of edible berries, it has started to get dark.\n\n"
+        "You are forced to seek shelter under a\n" 
+        "large tree for the night.\n"
+        "You satisfy part of your hunger with the\n"
+        "berries you managed to bring with you.\n"
+    )
+
+   
 def chapter_4():
-    print()
-
+    print(".....")
 
 def chapter_5():
     print()
-
 
 def end_scen_1():
     print()
