@@ -172,8 +172,8 @@ def the_shelter():
         "\n- What do you think " + name + ", should we try to build\n"
         "  a shelter here on the beach or should we\n"
         "  go further into the island to seek\n"
-        "  shelter for the night?\n", Fore.BLUE)
-    print()
+        "  shelter for the night?\n\n", Fore.BLUE
+    )
     print(Fore.GREEN + "build or seek:\n")
     choice = input(Fore.YELLOW + ">> ")
     while choice not in ("build", "seek"):
@@ -207,7 +207,7 @@ def the_shelter():
             "in your pockets.\n\n"
         )
         print_slow(
-            "It's getting dark and eventually you find a cave\n"
+            "It's getting dark and eventually you find a cave,\n"
             "in which you take shelter for the night and eat\n"
             "your berries which satisfy some of your hunger."
         )
