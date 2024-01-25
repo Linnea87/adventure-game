@@ -414,12 +414,39 @@ def the_waterfall():
         "You choose to camp here for the night.\n"
     )
 
-  
-def end_scen_1():
+def the_rescue():
+    clear()
+    print_slow("\n- " + name + " wake up wake up!!\n\n", Fore.BLUE)
+    print_slow(
+        "You wake up with a jolt and hear the\n"
+        "muffled sound of a helicopter.\n"
+        "hurriedly you start looking around to find\n" 
+        "different ways to get up the mountain.\n\n" 
+        "A little way off you see a path\n" 
+        "winding through the mountain.\n\n"
+    )
+    print_slow(
+        "Should we take the fast track and climb\n"
+        "the mountain or should we take the path" 
+        "through the mountain?\n\n", Fore.BLUE
+    )
+    time.sleep(1)
+    print(Fore.GREEN + "path or climb?\n\n")
+    the_last_choice = input(Fore.YELLOW + ">> ").lower()
+    while the_last_choice not in ("path", "climb"):
+        print(Fore.RED + "Invalid answer, enter path or climb\n")
+        the_last_choice = input(Fore.YELLOW + ">> ").lower()
+    if the_last_choice == "path":
+        return through_the_mountain()
+    elif the_last_choice == "climb":
+        return the_climb()
+
+
+def through_the_mountain():
     print()
 
 
-def end_scen_2():
+def the_climb():
     print()
 
 
@@ -427,16 +454,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    # welcome()
-    # player_answer()
+    welcome()
+    player_answer()
     player_name()
-    # intro()
-    # the_stranded_friends()
+    intro()
+    the_stranded_friends()
     the_shelter()
-    # the_serch_for_water()
-    # mountain_top()
-    # end_scen_1()
-    # end_scen_2()
+    the_serch_for_water()
+    mountain_top()
+    the_rescue()
 
 
 main()
