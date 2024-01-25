@@ -461,7 +461,25 @@ def through_the_mountain():
 
 
 def the_climb():
-    print()
+    clear()
+    print_slow(
+        "\nYou start climbing up the mountain.\n"
+        "Halfway up, fatigue starts to set in\n"
+        "and you get lactic acid in both your legs and arms.\n\n"
+        "Oliwer, who climbs first, loses his grip and falls.\n\n"
+    )
+    time.sleep(1)
+    input(Fore.GREEN + "Press enter to save Oliver! ")
+    clear()
+    print_slow(
+        "\n You reach to try to grab Oliver's hand,\n" 
+        "but you lose your grip with your other hand and fall.\n" 
+        "You hear how the sound of the helicopter\n"
+        "disappears into the distance, and everything\n" 
+        "becomes black and empty.\n\n"
+    )
+    time.sleep(1)
+    sys.exit()
 
 
 def main():
