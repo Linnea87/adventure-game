@@ -185,27 +185,29 @@ def the_shelter():
 
 
 def the_beach():
+    clear()
     print_slow(
         "\nYou and Oliwer start looking for driftwood\n"
-        "that you can use to build a shelter.\n")
+        "that you can use to build a shelter.\n\n")
     print_slow("- " + name + " come quickly and see what I found!\n\n", Fore.BLUE)
     input(Fore.GREEN + "press r to run to Oliwer: ")
     clear()
     print_slow(
-        "\nThere in the water it floats around the" 
-        "most beautiful driftwood you've ever seen\n!")
-    input(Fore.GREEN + "press w to wade into the water")
+        "\nThere in the water it floats around the\n" 
+        "most beautiful driftwood you've ever seen!\n\n")
+    input(Fore.GREEN + "press w to wade into the water: ")
     print_slow(
-        "After what feels like an eternity, you have managed\n" 
+        "\nAfter what feels like an eternity, you have managed\n" 
         "to collect the driftwood that was floating around,\n" 
         "and built your shelter for the night.\n"
     )
+    time.sleep(1)
 
 
 def the_winding_path():
     clear()
     print_slow(
-        "\nYou and Oliwer start walking further into "
+        "\nYou and Oliwer start walking further into\n"
         "the island and end up on a winding path.\n"
         "After what feels like an eternity, you have\n"
         "finally managed to fight your way out\n\n"
@@ -226,43 +228,72 @@ def the_winding_path():
         "You satisfy part of your hunger with the\n"
         "berries you managed to bring with you.\n"
     )
+    time.sleep(1)
 
    
 def the_serch_for_water():
     clear()
-    print_slow("\n- " + name + " our drinking water has run out\n\n!", Fore.BLUE)
+    print_slow("\n- " + name + " our drinking water has run out!\n\n", Fore.BLUE)
+    time.sleep(1)
     print_slow(
         "After days without rain, you start\n" 
-        "looking for sources of potable water.\n"
+        "looking for sources of potable water.\n\n"
         "When you have hiked for half the day,\n" 
-        "you will arrive at a mountain cave.\n"
-    )
-    print_slow(
-        "- Do we really have to go in there " + name + " ?\n"
-        "It's jet black.\n"
-        "Isn't it better to try to walk\n"
-        "around the cave instead?\n\n", Fore.BLUE
+        "you will arrive at a mountain cave.\n\n"
     )
     time.sleep(1)
-    print(Fore.GREEN + "walk in or walk around?\n")
-    input(Fore.YELLOW + ">> ")
-    while input not in ("walk in", "walk around"):
-        print(Fore.RED + "\nInvalid answer, enter walk in or walk around\n")
-        input(Fore.YELLOW + ">> ")
-    if input == "walk in":
+    print_slow(
+        "- Do we really have to go in there " + name + " ?\n"
+        "  It's jet black.\n"
+        "  Isn't it better to try to walk\n"
+        "  around the cave instead?\n\n", Fore.BLUE
+    )
+    time.sleep(1)
+    print(Fore.GREEN + "go in or go around?\n")
+    userInput = input(Fore.YELLOW + ">> ")
+    while userInput not in ("go in", "go around"):
+        print(Fore.RED + "\nInvalid answer, enter go in or go around\n")
+        userInput(Fore.YELLOW + ">> ")
+    if userInput == "go in":
         return mountain_cave()
-    elif input == "walk around":
+    elif userInput == "go around":
         return the_field()
 
 
 def mountain_cave():
     clear()
     print_slow(
-        "You enter the cave and after a while\n"
+        "\nYou enter the cave and after a while\n"
         "your eyes start to get used to the darkness\n"
         "You walk along the cave walls to move forward.\n\n"
     )
-    print_slow("")
+    time.sleep(1)
+    print_slow("- What is that sound?\n\n", Fore.BLUE)
+    time.sleep(1)
+    print_slow("- I don't know, let's follow it!\n\n", Fore.YELLOW)
+    input(Fore.GREEN + "Press f follow the sound: ")
+    clear()
+    print_slow(
+        "\nYou begin to approach where the sound is\n" 
+        "coming from and you glimpse daylight.\n"
+        "You follow the light and come to a spring\n" 
+        "full of drinkable rainwater.\n\n"
+    )
+    print_slow(
+        "You run forward and start drinking\n"
+        "as much as you can handle.\n"
+        "When you are no longer thirsty, you\n"
+        "look for something to refill your\n"
+        "water with without any luck.\n\n"
+    )
+    print_slow(
+        "You therefore decide to find a\n" 
+        "good place outside the cave\n"
+        "to build a new camp.\n"
+    )
+    time.sleep(1)
+
+
     
     
 
