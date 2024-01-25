@@ -389,7 +389,7 @@ def the_rickety_bridge():
         "get to the other side of the bridge.\n\n"
     )
     print_slow("- I jump first Oliwer!\n\n", Fore.YELLOW)
-    input(Fore.GREEN + "Press h to jump: ")
+    input(Fore.GREEN + "Press enter to jump: ")
     clear()
     print_slow(
         "\nWhen you start to jump, the bridge collapses\n" 
