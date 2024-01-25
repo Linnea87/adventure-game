@@ -443,7 +443,21 @@ def the_rescue():
 
 
 def through_the_mountain():
-    print()
+    clear()
+    print_slow(
+        "\nYou run as fast as you can\n"
+        "up the winding path. You are tired\n"
+        "but manage to get to the top.\n\n"
+        "You take off your shirts and start\n"
+        "waving them with all the strength you have left.\n"
+        "You see the helicopter turning and landing.\n\n"
+    )
+    input(Fore.GREEN + "Press enter to go to the helicopter! ")
+    print_slow(
+        "You get into the helicopter that takes you home\n"
+        "after several weeks of survival on the island!\n")
+    time.sleep(1)
+    sys.exit()
 
 
 def the_climb():
