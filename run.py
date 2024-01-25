@@ -403,7 +403,7 @@ def the_waterfall():
         "\nA little further into the path\n"
         "you will come to a large waterfall.\n\n"
     )
-    print_slow("- Let's jump in and cool off!\n\n", Fore.YELLOW)
+    print_slow("- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
     input(Fore.GREEN + "Press c to take a cooling bath: ")
     clear()
     print_slow(
