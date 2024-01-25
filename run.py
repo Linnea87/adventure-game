@@ -343,6 +343,7 @@ def the_field():
     sys.exit()
     
 def mountain_top():
+    clear()
     print_slow(
         "\nSeveral weeks have passed since you found\n" 
         "the mountain cave. You've set off to look\n"
@@ -362,14 +363,14 @@ def mountain_top():
         "After you have hiked for a few hours, the path splits\n" 
         "and the trees obscure the view of the mountain top.\n\n"
     )
-    print(Fore.GREEN + "right or left\n")
-    input(">> ")
-    while input not in ("right", "left"):
+    print(Fore.GREEN + "right or left?\n")
+    path =input(">> ")
+    while path not in ("right", "left"):
         print(Fore.RED + "Invalid answer, choose right or left\n")
-        input(">> ")
-    if input == "right":
+        path =input(">> ")
+    if path == "right":
         return the_rickety_bridge()
-    elif input == "left":
+    elif path == "left":
         return the_waterfall()
     
 
