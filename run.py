@@ -222,7 +222,8 @@ def the_winding_path():
     clear()
     print_slow(
         "\nWhen you have picked your pockets\n" 
-        "full of edible berries, it has started to get dark.\n\n"
+        "full of edible berries, it has started\n" 
+        "to get dark.\n\n"
         "You are forced to seek shelter under a\n" 
         "large tree for the night.\n"
         "You satisfy part of your hunger with the\n"
@@ -242,8 +243,9 @@ def the_serch_for_water():
         "you will arrive at a mountain cave.\n\n"
     )
     time.sleep(1)
+    clear()
     print_slow(
-        "- Do we really have to go in there " + name + " ?\n"
+        "\n- Do we really have to go in there " + name + " ?\n"
         "  It's jet black.\n"
         "  Isn't it better to try to walk\n"
         "  around the cave instead?\n\n", Fore.BLUE
@@ -292,17 +294,33 @@ def mountain_cave():
         "to build a new camp.\n"
     )
     time.sleep(1)
-
-
-    
-    
+ 
 
 def the_field():
-    print()
-
+    clear()
+    print_slow(
+        "\nYou go around the mountain cave\n" 
+        "and find another way.\n\n"
+        "The sun is scorching and\n"
+        "after hours of hiking\n"
+        "you are so tired and\n" 
+        "dehydrated that you\n"
+        "don't notice that you have ended up\n"
+        "in the middle of a field of quicksand.\n\n"
+    )
+    print_slow("- Help, I'm sinking!!!!\n\n", Fore.BLUE)
+    time.sleep(1)
+    input(Fore.GREEN + "Press h to help Oliwer: ")
+    clear()
+    print_slow(
+        "\nYou run to Oliwer, but you are so tired\n"
+        "and have no energy left,\n"
+        "that you stumble right into the quicksand.\n"
+        "And neither you nor Oliwer survive.\n\n"
+    )
+    time.sleep(1)
+    sys.exit()
     
-    
-
 def chapter_5():
     print()
 
