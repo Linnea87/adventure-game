@@ -52,10 +52,10 @@ def player_answer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    answer = input(Fore.YELLOW + ">> ")
+    answer = input(Fore.YELLOW + ">> ").lower()
     while answer not in ("yes", "no"):
         print(Fore.RED + "\nInvalid answer, enter yes or no!\n")
-        answer = input(Fore.YELLOW + ">> ")
+        answer = input(Fore.YELLOW + ">> ").lower()
     if answer == "no":
         print_slow("\nOh, that's to bad! Maybe another time then :)\n\n")
         time.sleep(1)
@@ -90,7 +90,7 @@ def player_name():
                     "your most exciting, fast-paced and dangerous\n"
                     "adventure you have ever been on!\n\n"
                 )
-                input("So when you feel ready to begin just hit enter!")
+                input("So when you feel ready to begin just hit enter! ")
                 break
         except Exception as e:
             print(Fore.RED + f"An error occurred: {e}")
@@ -135,7 +135,7 @@ def the_stranded_friends():
         "out to you and you begin to regain consciousness.\n"
     )
     time.sleep(1)
-    input(Fore.GREEN + "\nPress w to wake up: ")
+    input(Fore.GREEN + "\nPress enter to wake up: ")
     clear()
     print_slow(
         "\nSlowly you open your eyes and see your friend\n"
@@ -145,7 +145,7 @@ def the_stranded_friends():
         "you feel a bump.\n"
     )
     time.sleep(1)
-    input(Fore.GREEN + "\nPress t to talk with Oliwer: ")
+    input(Fore.GREEN + "\nPress enter to talk with Oliwer: ")
     clear()
     print_slow("\n- what happened? where are we?\n\n", Fore.YELLOW)
     print_slow(
@@ -156,7 +156,7 @@ def the_stranded_friends():
         "  sort of island.\n\n", Fore.BLUE
     )
     print_slow("Oliwer extends his hand to help you up\n")
-    input(Fore.GREEN + "\nPress h to take Oliwers hand: ")
+    input(Fore.GREEN + "\nPress enter to take Oliwers hand: ")
 
 
 def the_shelter():
@@ -174,10 +174,10 @@ def the_shelter():
         "  shelter for the night?\n\n", Fore.BLUE
     )
     print(Fore.GREEN + "build or seek:\n")
-    choice = input(Fore.YELLOW + ">> ")
+    choice = input(Fore.YELLOW + ">> ").lower()
     while choice not in ("build", "seek"):
         print(Fore.RED + "\nInvalid choice, you must choose build or seek!\n")
-        choice = input(Fore.YELLOW + ">> ")
+        choice = input(Fore.YELLOW + ">> ").lower()
     if choice == "build":
         return the_beach()
     elif choice == "seek":
@@ -199,7 +199,7 @@ def the_beach():
     print_slow(
         "\nThere in the water it floats around the\n" 
         "most beautiful driftwood you've ever seen!\n\n")
-    input(Fore.GREEN + "press w to wade into the water: ")
+    input(Fore.GREEN + "Press enter to wade into the water: ")
     print_slow(
         "\nAfter what feels like an eternity, you have managed\n" 
         "to collect the driftwood that was floating around,\n" 
@@ -226,7 +226,7 @@ def the_winding_path():
     print_slow( 
         "\nThere are plants of all kinds and colors.\n"
         "And lots of different kind of berries.\n\n")
-    input(Fore.GREEN + "press b to pick berries: ")    
+    input(Fore.GREEN + "press enter to pick berries: ")    
     clear()
     print_slow(
         "\nWhen you have picked your pockets\n" 
@@ -265,15 +265,15 @@ def the_serch_for_water():
     )
     time.sleep(1)
     print(Fore.GREEN + "go in or go around?\n")
-    userInput = input(Fore.YELLOW + ">> ")
+    userInput = input(Fore.YELLOW + ">> ").lower()
     while userInput not in ("go in", "go around"):
         print(Fore.RED + "\nInvalid answer, enter go in or go around\n")
-        userInput(Fore.YELLOW + ">> ")
+        userInput = input(Fore.YELLOW + ">> ").lower()
     if userInput == "go in":
         return mountain_cave()
     elif userInput == "go around":
         return the_field()
-
+    
 
 def mountain_cave():
     """
@@ -290,7 +290,7 @@ def mountain_cave():
     print_slow("- What is that sound?\n\n", Fore.BLUE)
     time.sleep(1)
     print_slow("- I don't know, let's follow it!\n\n", Fore.YELLOW)
-    input(Fore.GREEN + "Press f follow the sound: ")
+    input(Fore.GREEN + "Press enter to follow the sound: ")
     clear()
     print_slow(
         "\nYou begin to approach where the sound is\n" 
@@ -331,7 +331,7 @@ def the_field():
     )
     print_slow("- Help, I'm sinking!!!!\n\n", Fore.BLUE)
     time.sleep(1)
-    input(Fore.GREEN + "Press h to help Oliwer: ")
+    input(Fore.GREEN + "Press enter to help Oliwer: ")
     clear()
     print_slow(
         "\nYou run to Oliwer, but you are so tired\n"
@@ -354,9 +354,9 @@ def mountain_top():
         "- " + name + " do you see what " 
         "i see over there?\n\n", Fore.BLUE
     )
-    input(Fore.GREEN + "Press a to answer Oliwer: ")
+    input(Fore.GREEN + "Press enter to answer Oliwer: ")
     clear()
-    print_slow("\n\nYes I see, it's the top of a mountain!\n", Fore.YELLOW)
+    print_slow("\n\n- Yes I see, it's the top of a mountain!\n", Fore.YELLOW)
     time.sleep(1)
     print_slow(
         "\nEagerly, you start walking towards the mountain top.\n"
@@ -364,10 +364,10 @@ def mountain_top():
         "and the trees obscure the view of the mountain top.\n\n"
     )
     print(Fore.GREEN + "right or left?\n")
-    path =input(">> ")
+    path = input(">> ").lower()
     while path not in ("right", "left"):
         print(Fore.RED + "Invalid answer, choose right or left\n")
-        path =input(">> ")
+        path = input(">> ").lower()
     if path == "right":
         return the_rickety_bridge()
     elif path == "left":
@@ -405,7 +405,7 @@ def the_waterfall():
         "you will come to a large waterfall.\n\n"
     )
     print_slow("- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
-    input(Fore.GREEN + "Press c to take a cooling bath: ")
+    input(Fore.GREEN + "Press enter to take a cooling bath: ")
     clear()
     print_slow(
         "\nWhen you have finished swimming, you continue your hike\n" 
@@ -427,16 +427,16 @@ def main():
     """
     This function calls all the other functions.
     """
-    welcome()
-    player_answer()
+    # welcome()
+    # player_answer()
     player_name()
-    intro()
-    the_stranded_friends()
+    # intro()
+    # the_stranded_friends()
     the_shelter()
-    the_serch_for_water()
-    mountain_top()
-    end_scen_1()
-    end_scen_2()
+    # the_serch_for_water()
+    # mountain_top()
+    # end_scen_1()
+    # end_scen_2()
 
 
 main()
