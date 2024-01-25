@@ -185,6 +185,10 @@ def the_shelter():
 
 
 def the_beach():
+    """
+    One of the paths with an interactive story and 
+    the game continues
+    """
     clear()
     print_slow(
         "\nYou and Oliwer start looking for driftwood\n"
@@ -205,6 +209,10 @@ def the_beach():
 
 
 def the_winding_path():
+    """
+   This path gives the user an interactive story 
+   and the game continues
+    """
     clear()
     print_slow(
         "\nYou and Oliwer start walking further into\n"
@@ -233,6 +241,11 @@ def the_winding_path():
 
    
 def the_serch_for_water():
+    """
+    The user must make a decision. Is the decision
+    not valid, an error message is displayed and the user gets
+    a second chance to make a decision.
+    """
     clear()
     print_slow("\n- " + name + " our drinking water has run out!\n\n", Fore.BLUE)
     time.sleep(1)
@@ -263,6 +276,10 @@ def the_serch_for_water():
 
 
 def mountain_cave():
+    """
+    This interactive story 
+    leads the user further in the game
+    """
     clear()
     print_slow(
         "\nYou enter the cave and after a while\n"
@@ -297,6 +314,10 @@ def mountain_cave():
  
 
 def the_field():
+    """
+    Here the interactive story leads the
+    user to their deathh and the game ends
+    """
     clear()
     print_slow(
         "\nYou go around the mountain cave\n" 
