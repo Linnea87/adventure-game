@@ -398,7 +398,20 @@ def the_rickety_bridge():
     
 
 def the_waterfall():
-    print()
+    clear()
+    print_slow(
+        "\nA little further into the path\n"
+        "you will come to a large waterfall.\n\n"
+    )
+    print_slow("- Let's jump in and cool off!\n\n", Fore.BLUE)
+    input(Fore.GREEN + "Press c to take a cooling bath: ")
+    clear()
+    print_slow(
+        "\nWhen you have finished swimming, you continue your hike\n" 
+        "towards the top of the mountain.\n\n"
+        "At dusk you have finally arrived at a high mountain.\n" 
+        "You choose to camp here for the night.\n"
+    )
         
     
 def end_scen_1():
