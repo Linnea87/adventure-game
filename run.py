@@ -403,7 +403,7 @@ def the_waterfall():
         "\nA little further into the path\n"
         "you will come to a large waterfall.\n\n"
     )
-    print_slow("- Let's jump in and cool off!\n\n", Fore.BLUE)
+    print_slow("- Let's jump in and cool off!\n\n", Fore.YELLOW)
     input(Fore.GREEN + "Press c to take a cooling bath: ")
     clear()
     print_slow(
@@ -412,8 +412,8 @@ def the_waterfall():
         "At dusk you have finally arrived at a high mountain.\n" 
         "You choose to camp here for the night.\n"
     )
-        
-    
+
+  
 def end_scen_1():
     print()
 
