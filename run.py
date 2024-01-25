@@ -316,7 +316,7 @@ def mountain_cave():
 def the_field():
     """
     Here the interactive story leads the
-    user to their deathh and the game ends
+    user to their death and the game ends
     """
     clear()
     print_slow(
@@ -342,9 +342,65 @@ def the_field():
     time.sleep(1)
     sys.exit()
     
-def chapter_5():
-    print()
+def mountain_top():
+    print_slow(
+        "\nSeveral weeks have passed since you found\n" 
+        "the mountain cave. You've set off to look\n"
+        "for edibles as the food you've collected\n" 
+        "starts to wear out.\n\n"
+    )
+    print_slow(
+        "- " + name + " do you see what " 
+        "i see over there?\n\n", Fore.BLUE
+    )
+    input(Fore.GREEN + "Press a to answer Oliwer: ")
+    clear()
+    print_slow("\n\nYes I see, it's the top of a mountain!\n", Fore.YELLOW)
+    time.sleep(1)
+    print_slow(
+        "\nEagerly, you start walking towards the mountain top.\n"
+        "After you have hiked for a few hours, the path splits\n" 
+        "and the trees obscure the view of the mountain top.\n\n"
+    )
+    print(Fore.GREEN + "right or left\n")
+    input(">> ")
+    while input not in ("right", "left"):
+        print(Fore.RED + "Invalid answer, choose right or left\n")
+        input(">> ")
+    if input == "right":
+        return the_rickety_bridge()
+    elif input == "left":
+        return the_waterfall()
+    
 
+def the_rickety_bridge():
+    clear()
+    print_slow(
+        "A bit into the path you will come to a\n" 
+        "rickety bridge, and under the bridge there\n" 
+        "is a precipice. You quickly notice that there\n" 
+        "is no other way but to cross the bridge.\n\n"
+    )
+    print_slow(
+        "When you get to the middle of the bridge,\n" 
+        "you notice that several planks are missing,\n"
+        "and you have to jump over the big hole to\n" 
+        "get to the other side of the bridge.\n\n"
+    )
+    print_slow("- I jump first Oliwer!\n\n", Fore.YELLOW)
+    input(Fore.GREEN + "Press h to jump: ")
+    clear()
+    print_slow(
+        "\nWhen you start to jump, the bridge collapses\n" 
+        "and you both fall into the abyss and do not survive.\n")
+    time.sleep(1)
+    sys.exit()
+    
+
+def the_waterfall():
+    print()
+        
+    
 def end_scen_1():
     print()
 
@@ -364,7 +420,7 @@ def main():
     the_stranded_friends()
     the_shelter()
     the_serch_for_water()
-    chapter_5()
+    mountain_top()
     end_scen_1()
     end_scen_2()
 
