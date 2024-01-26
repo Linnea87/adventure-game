@@ -126,8 +126,8 @@ def the_stranded_friends():
     """
     clear()
     print_slow(
-        "\n\t\t- come on " + name + ", you can't die and leave "
-        "me alone here!\n", Fore.BLUE
+        "\n\t\t- Come on " + name + "! You can't die and\n" 
+        "\t\t  leave me alone here!\n", Fore.BLUE
     )
     time.sleep(1)
     print_slow(
@@ -138,8 +138,8 @@ def the_stranded_friends():
     input(Fore.GREEN + " Press enter to wake up! ")
     clear()
     print_slow(
-        "\n\tSlowly you open your eyes and see your friend\n"
-        "\tOliwer leaning over you!\n\n"
+        "\n\tSlowly you open your eyes and see your\n"
+        "\tfriend Oliwer leaning over you!\n\n"
         "\tYou sit up slowly and your head aches.\n"
         "\tWhen you bring your hand to your head,\n"
         "\tyou feel a bump.\n\n"
@@ -485,15 +485,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    # welcome()
-    # player_answer()
+    welcome()
+    player_answer()
     player_name()
-    # intro()
+    intro()
     the_stranded_friends()
-    # the_shelter()
-    # the_serch_for_water()
-    # mountain_top()
-    # the_rescue()
+    the_shelter()
+    the_serch_for_water()
+    mountain_top()
+    the_rescue()
 
 
 main()
