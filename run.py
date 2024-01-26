@@ -33,7 +33,7 @@ def welcome():
     have the courage to play.
     """
     clear()
-    print_slow("\n\t\t\t\t Welcome to\n\n")
+    print_slow("\n\t\t\t\t  Welcome to\n\n")
     time.sleep(1)
     """ ASCII art """
     result = pyfiglet.figlet_format(
@@ -41,7 +41,7 @@ def welcome():
     print(Fore.CYAN + result)
     print_slow("\t\tDo you have the courage to enter this adventure?\n\n")
     time.sleep(1)
-    print(Fore.GREEN + " yes or no?\n")
+    print(Fore.GREEN + "  yes or no?\n")
 
 
 def player_answer():
@@ -52,18 +52,18 @@ def player_answer():
     Is the users answer not valid, an error message
     with instructions is displayed
     """
-    answer = input(Fore.YELLOW + " >> ").lower()
+    answer = input(Fore.YELLOW + "  >> ").lower()
     while answer not in ("yes", "no"):
         print(Fore.RED + "\n Invalid answer, enter yes or no!\n")
-        answer = input(Fore.YELLOW + " >> ").lower()
+        answer = input(Fore.YELLOW + "  >> ").lower()
     if answer == "no":
-        print_slow("\n Oh, that's to bad! Maybe another time then :)\n\n")
+        print_slow("\n  Oh, that's to bad! Maybe another time then :)\n\n")
         time.sleep(1)
         sys.exit()
     elif answer == "yes":
         clear()
         print_slow(
-            " \nGood! The first thing you have to do "
+            "\n  Good! The first thing you have to do "
             " is enter your name below:\n\n"
         )
 
