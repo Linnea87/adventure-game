@@ -63,8 +63,8 @@ def player_answer():
     elif answer == "yes":
         clear()
         print_slow(
-            "\n  Good! The first thing you have to do "
-            " is enter your name below:\n\n"
+            "\n\tGood! The first thing you have to do "
+            "is enter your name below!\n\n"
         )
 
 
@@ -78,19 +78,18 @@ def player_name():
     while True:
         try:
             global name
-            name = input(Fore.YELLOW + ">> ")
+            name = input(Fore.YELLOW + " >> ")
             if not name.isalpha():
                 print(Fore.RED + " \nYour name can only contain letters!")
             elif len(name) < 3:
                 print(Fore.RED + " \nYour name needs to be 3 letters or more!")
             else:
-                clear()
                 print_slow(
-                    "\n " + name + ", you are now about to begin perhaps\n"
-                    " your most exciting, fast-paced and dangerous\n"
-                    " adventure you have ever been on!\n\n"
+                    "\n\t" + name + ", you are now about to begin perhaps\n"
+                    "\tyour most exciting, fast-paced and dangerous\n"
+                    "\tadventure you have ever been on!\n\n"
                 )
-                input(" So when you feel ready to begin just hit enter! ")
+                input(Fore.GREEN + " So when you feel ready to begin just hit enter! ")
                 break
         except Exception as e:
             print(Fore.RED + f" An error occurred: {e}")
@@ -103,18 +102,19 @@ def intro():
     """
     clear()
     print_slow(
-        "\n What was supposed to be a quiet and "
-        " lovely boating holiday\nout at sea "
-        " with some of your closest friends, turned out\n"
-        " to be the complete opposite!\n\n"
-        " After a few days, you end up in the eye of the worst storm\n"
-        " you've ever experienced. "
-        " The heavy rain and the powerful waves\n"
-        " destroy parts of your boat and it slowly begins to sink.\n"
-        " In a panic, you try to get to the lifeboat "
-        " to save you\nand your friends, "
-        " when suddenly you collapse\n"
-        " and everything goes dark!\n"
+        "\n\t\tWhat was supposed to be a quiet and\n"
+        "\t\tlovely boating holiday out at sea\n"
+        "\t\twith some of your closest friends,\n" 
+        "\t\tturned out to be the complete opposite!\n\n"
+        "\t\tAfter a few days, you end up in the eye\n"
+        "\t\tof the worst storm you've ever experienced.\n"
+        "\t\tThe heavy rain and the powerful waves\n"
+        "\t\tdestroy parts of your boat and it slowly\n" 
+        "\t\tbegins to sink.\n\n"
+        "\t\tIn a panic, you try to get to\n"
+        "\t\tthe lifeboat to save you and your friends,\n"
+        "\t\twhen suddenly you collapse and\n"
+        "\t\teverything goes dark!\n"
     )
     time.sleep(1)
 
@@ -485,15 +485,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    welcome()
-    player_answer()
+    # welcome()
+    # player_answer()
     player_name()
     intro()
-    the_stranded_friends()
-    the_shelter()
-    the_serch_for_water()
-    mountain_top()
-    the_rescue()
+    # the_stranded_friends()
+    # the_shelter()
+    # the_serch_for_water()
+    # mountain_top()
+    # the_rescue()
 
 
 main()
