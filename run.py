@@ -41,7 +41,7 @@ def welcome():
     print(Fore.CYAN + result)
     print_slow("\t\tDo you have the courage to enter this adventure?\n\n")
     time.sleep(1)
-    print(Fore.GREEN + " yes or no:\n")
+    print(Fore.GREEN + " yes or no?\n")
 
 
 def player_answer():
@@ -53,11 +53,11 @@ def player_answer():
     with instructions is displayed
     """
     answer = input(Fore.YELLOW + " >> ").lower()
-    while answer not in (" yes", "no"):
-        print(Fore.RED + " \nInvalid answer, enter yes or no!\n")
+    while answer not in ("yes", "no"):
+        print(Fore.RED + "\n Invalid answer, enter yes or no!\n")
         answer = input(Fore.YELLOW + " >> ").lower()
     if answer == "no":
-        print_slow(" \nOh, that's to bad! Maybe another time then :)\n\n")
+        print_slow("\n Oh, that's to bad! Maybe another time then :)\n\n")
         time.sleep(1)
         sys.exit()
     elif answer == "yes":
