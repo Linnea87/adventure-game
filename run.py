@@ -33,7 +33,7 @@ def welcome():
     have the courage to play.
     """
     clear()
-    print_slow("\n\t\t\t\t\tWelcome to\n\n")
+    print_slow("\n\t\t\t\t Welcome to\n\n")
     time.sleep(1)
     """ ASCII art """
     result = pyfiglet.figlet_format(
