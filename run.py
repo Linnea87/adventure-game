@@ -82,14 +82,18 @@ def player_name():
             if not name.isalpha():
                 print(Fore.RED + "\n  Your name can only contain letters!")
             elif len(name) < 3:
-                print(Fore.RED + "\n  Your name needs to be 3 letters or more!")
+                print(
+                    Fore.RED + "\n  Your name needs to be 3 letters or more!")
             else:
                 print_slow(
                     "\n\t" + name + ", you are now about to begin perhaps\n"
                     "\tyour most exciting, fast-paced and dangerous\n"
                     "\tadventure you have ever been on!\n\n"
                 )
-                input(Fore.GREEN + "  So when you feel ready to begin just hit enter! ")
+                input(
+                    Fore.GREEN + "  So when you feel ready to begin just"
+                    "hit enter! "
+                )
                 break
         except Exception as e:
             print(Fore.RED + f" An error occurred: {e}")
@@ -104,12 +108,12 @@ def intro():
     print_slow(
         "\n\t\tWhat was supposed to be a quiet and\n"
         "\t\tlovely boating holiday out at sea\n"
-        "\t\twith some of your closest friends,\n" 
+        "\t\twith some of your closest friends,\n"
         "\t\tturned out to be the complete opposite!\n\n"
         "\t\tAfter a few days, you end up in the eye\n"
         "\t\tof the worst storm you've ever experienced.\n"
         "\t\tThe heavy rain and the powerful waves\n"
-        "\t\tdestroy parts of your boat and it slowly\n" 
+        "\t\tdestroy parts of your boat and it slowly\n"
         "\t\tbegins to sink.\n\n"
         "\t\tIn a panic, you try to get to\n"
         "\t\tthe lifeboat to save you and your friends,\n"
@@ -126,7 +130,7 @@ def the_stranded_friends():
     """
     clear()
     print_slow(
-        "\n\t\t- Come on " + name + "! You can't die and\n" 
+        "\n\t\t- Come on " + name + "! You can't die and\n"
         "\t\t  leave me alone here!\n", Fore.BLUE
     )
     time.sleep(1)
@@ -175,7 +179,9 @@ def the_shelter():
     print(Fore.GREEN + "  build or seek?\n")
     choice = input(Fore.YELLOW + "  >> ").lower()
     while choice not in ("build", "seek"):
-        print(Fore.RED + "\n  Invalid choice, you must choose build or seek!\n")
+        print(
+            Fore.RED + "\n  Invalid choice, you must choose build or seek!\n"
+        )
         choice = input(Fore.YELLOW + "  >> ").lower()
     if choice == "build":
         return the_beach()
@@ -185,7 +191,7 @@ def the_shelter():
 
 def the_beach():
     """
-    One of the paths with an interactive story and 
+    One of the paths with an interactive story and
     the game continues
     """
     clear()
@@ -196,12 +202,12 @@ def the_beach():
         "\t\t- " + name + " come quickly and see what I found!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  press enter to run to Oliwer: ")
     print_slow(
-        "\n\tThere in the water it floats around the\n" 
+        "\n\tThere in the water it floats around the\n"
         "\tmost beautiful driftwood you've ever seen!\n\n")
     input(Fore.GREEN + "  Press enter to wade into the water! ")
     print_slow(
-        "\n\tAfter what feels like an eternity, you have managed\n" 
-        "\tto collect the driftwood that was floating around,\n" 
+        "\n\tAfter what feels like an eternity, you have managed\n"
+        "\tto collect the driftwood that was floating around,\n"
         "\tand built your shelter for the night.\n"
     )
     time.sleep(1)
@@ -209,7 +215,7 @@ def the_beach():
 
 def the_winding_path():
     """
-   This path gives the user an interactive story 
+   This path gives the user an interactive story
    and the game continues
     """
     clear()
@@ -221,21 +227,22 @@ def the_winding_path():
     )
     print_slow("\t\t - " + name + " look!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to look where Oliwer is pointing! ")
-    print_slow( 
-        "\n\tThere are plants of all kinds and colors.\n"
-        "\tAnd lots of different kinds of berries.\n\n")
-    input(Fore.GREEN + "  press enter to pick berries! ")    
     print_slow(
-        "\n\tWhen you have picked your pockets full of\n" 
-        "\tedible berries, it has started to get dark.\n" 
-        "\tYou are forced to seek shelter under a\n" 
+        "\n\tThere are plants of all kinds and colors.\n"
+        "\tAnd lots of different kinds of berries.\n\n"
+    )
+    input(Fore.GREEN + "  press enter to pick berries! ")
+    print_slow(
+        "\n\tWhen you have picked your pockets full of\n"
+        "\tedible berries, it has started to get dark.\n"
+        "\tYou are forced to seek shelter under a\n"
         "\tlarge tree for the night.\n"
         "\tYou satisfy part of your hunger with the\n"
         "\tberries you managed to bring with you.\n"
     )
     time.sleep(1)
 
-   
+
 def the_serch_for_water():
     """
     The user must make a decision. Is the decision
@@ -247,9 +254,9 @@ def the_serch_for_water():
         "\n\t\t- " + name + " our drinking water has run out!\n\n", Fore.BLUE)
     time.sleep(1)
     print_slow(
-        "\tAfter days without rain, you start\n" 
+        "\tAfter days without rain, you start\n"
         "\tlooking for sources of potable water.\n\n"
-        "\tWhen you have hiked for half the day,\n" 
+        "\tWhen you have hiked for half the day,\n"
         "\tyou will arrive at a mountain cave.\n\n"
     )
     time.sleep(1)
@@ -269,11 +276,11 @@ def the_serch_for_water():
         return mountain_cave()
     elif userInput == "go around":
         return the_field()
-    
+
 
 def mountain_cave():
     """
-    This interactive story 
+    This interactive story
     leads the user further in the game
     """
     clear()
@@ -288,9 +295,9 @@ def mountain_cave():
     print_slow("\t\t- I don't know, let's follow it!\n\n", Fore.YELLOW)
     input(Fore.GREEN + "  Press enter to follow the sound! ")
     print_slow(
-        "\n\tYou begin to approach where the sound is\n" 
+        "\n\tYou begin to approach where the sound is\n"
         "\tcoming from and you glimpse daylight.\n"
-        "\tYou follow the light and come to a spring\n" 
+        "\tYou follow the light and come to a spring\n"
         "\tfull of drinkable rainwater.\n\n"
     )
     print_slow(
@@ -301,12 +308,12 @@ def mountain_cave():
         "\twater with without any luck.\n\n"
     )
     print_slow(
-        "\tYou therefore decide to find a\n" 
+        "\tYou therefore decide to find a\n"
         "\tgood place outside the cave\n"
         "\tto build a new camp.\n"
     )
     time.sleep(1)
- 
+
 
 def the_field():
     """
@@ -315,11 +322,11 @@ def the_field():
     """
     clear()
     print_slow(
-        "\n\tYou go around the mountain cave\n" 
+        "\n\tYou go around the mountain cave\n"
         "\tand find another way.\n\n"
         "\tThe sun is scorching and\n"
         "\tafter hours of hiking\n"
-        "\tyou are so tired and\n" 
+        "\tyou are so tired and\n"
         "\tdehydrated that you\n"
         "\tdon't notice that you have ended up\n"
         "\tin the middle of a field of quicksand.\n\n"
@@ -336,17 +343,18 @@ def the_field():
     )
     time.sleep(1)
     sys.exit()
-    
+
+
 def mountain_top():
     clear()
     print_slow(
-        "\n\tSeveral weeks have passed since you found the\n" 
+        "\n\tSeveral weeks have passed since you found the\n"
         "\tmountain cave. You've set off to look for\n"
-        "\tedibles as the food you've collected starts\n" 
+        "\tedibles as the food you've collected starts\n"
         "\tto wear out.\n\n"
     )
     print_slow(
-        "\t\t- " + name + " do you see what " 
+        "\t\t- " + name + " do you see what "
         "i see over there?\n\n", Fore.BLUE
     )
     input(Fore.GREEN + "  Press enter to answer Oliwer! ")
@@ -354,7 +362,7 @@ def mountain_top():
     time.sleep(1)
     print_slow(
         "\n\tEagerly, you start walking towards the mountain top.\n"
-        "\tAfter you have hiked for a few hours, the path splits\n" 
+        "\tAfter you have hiked for a few hours, the path splits\n"
         "\tand the trees obscure the view of the mountain top.\n\n"
     )
     print(Fore.GREEN + "  right or left?\n")
@@ -366,30 +374,30 @@ def mountain_top():
         return the_rickety_bridge()
     elif path == "left":
         return the_waterfall()
-    
+
 
 def the_rickety_bridge():
     clear()
     print_slow(
-        "\tA bit into the path you will come to a\n" 
-        "\trickety bridge, and under the bridge there\n" 
-        "\tis a precipice. You quickly notice that there\n" 
+        "\tA bit into the path you will come to a\n"
+        "\trickety bridge, and under the bridge there\n"
+        "\tis a precipice. You quickly notice that there\n"
         "\tis no other way but to cross the bridge.\n\n"
     )
     print_slow(
-        "\tWhen you get to the middle of the bridge,\n" 
+        "\tWhen you get to the middle of the bridge,\n"
         "\tyou notice that several planks are missing,\n"
-        "\tand you have to jump over the big hole to\n" 
+        "\tand you have to jump over the big hole to\n"
         "\tget to the other side of the bridge.\n\n"
     )
     print_slow("\t\t- I jump first Oliwer!\n\n", Fore.YELLOW)
     input(Fore.GREEN + "  Press enter to jump: ")
     print_slow(
-        "\n\tWhen you start to jump, the bridge collapses\n" 
+        "\n\tWhen you start to jump, the bridge collapses\n"
         "\tand you both fall into the abyss and do not survive.\n")
     time.sleep(1)
     sys.exit()
-    
+
 
 def the_waterfall():
     clear()
@@ -401,11 +409,12 @@ def the_waterfall():
         "\t\t- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to take a cooling bath: ")
     print_slow(
-        "\n\tWhen you have finished swimming, you continue\n" 
+        "\n\tWhen you have finished swimming, you continue\n"
         "\tyour hike towards the top of the mountain.\n\n"
-        "\tAt dusk you have finally arrived at a high mountain.\n" 
+        "\tAt dusk you have finally arrived at a high mountain.\n"
         "\tYou choose to camp here for the night.\n"
     )
+
 
 def the_rescue():
     clear()
@@ -414,14 +423,14 @@ def the_rescue():
     print_slow(
         "\tYou wake up with a jolt and hear the\n"
         "\tmuffled sound of a helicopter.\n"
-        "\thurriedly you start looking around to find\n" 
-        "\tdifferent ways to get up the mountain.\n\n" 
-        "\tA little way off you see a path\n" 
+        "\thurriedly you start looking around to find\n"
+        "\tdifferent ways to get up the mountain.\n\n"
+        "\tA little way off you see a path\n"
         "\twinding through the mountain.\n\n"
     )
     print_slow(
         "\t\t- Should we take the fast track and climb\n"
-        "\t\t  the mountain or should we take the path\n" 
+        "\t\t  the mountain or should we take the path\n"
         "\t\t  through the mountain?\n\n", Fore.BLUE
     )
     time.sleep(1)
@@ -465,10 +474,10 @@ def the_climb():
     time.sleep(1)
     input(Fore.GREEN + "  Press enter to save Oliver! ")
     print_slow(
-        "\n\tYou reach to try to grab Oliver's hand,\n" 
-        "\tbut you lose your grip with your other hand and fall.\n" 
+        "\n\tYou reach to try to grab Oliver's hand,\n"
+        "\tbut you lose your grip with your other hand and fall.\n"
         "\tYou hear how the sound of the helicopter\n"
-        "\tdisappears into the distance, and everything\n" 
+        "\tdisappears into the distance, and everything\n"
         "\tbecomes black and empty.\n\n"
     )
     time.sleep(1)
