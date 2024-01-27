@@ -245,28 +245,29 @@ def the_serch_for_water():
     a second chance to make a decision.
     """
     clear()
-    print_slow(" \n- " + name + " our drinking water has run out!\n\n", Fore.BLUE)
+    print_slow(
+        "\n\t\t- " + name + " our drinking water has run out!\n\n", Fore.BLUE)
     time.sleep(1)
     print_slow(
-        " After days without rain, you start\n" 
-        " looking for sources of potable water.\n\n"
-        " When you have hiked for half the day,\n" 
-        " you will arrive at a mountain cave.\n\n"
+        "\tAfter days without rain, you start\n" 
+        "\tlooking for sources of potable water.\n\n"
+        "\tWhen you have hiked for half the day,\n" 
+        "\tyou will arrive at a mountain cave.\n\n"
     )
     time.sleep(1)
     clear()
     print_slow(
-        " \n- Do we really have to go in there " + name + " ?\n"
-        "     It's jet black.\n"
-        "     Isn't it better to try to walk\n"
-        "     around the cave instead?\n\n", Fore.BLUE
+        "\n\t\t- Do we really have to go in there " + name + " ?\n"
+        "\t\t  It's jet black.\n"
+        "\t\t  Isn't it better to try to walk\n"
+        "\t\t  around the cave instead?\n\n", Fore.BLUE
     )
     time.sleep(1)
-    print(Fore.GREEN + " go in or go around?\n")
-    userInput = input(Fore.YELLOW + " >> ").lower()
+    print(Fore.GREEN + "  go in or go around?\n")
+    userInput = input(Fore.YELLOW + "  >> ").lower()
     while userInput not in ("go in", "go around"):
-        print(Fore.RED + " \nInvalid answer, enter go in or go around\n")
-        userInput = input(Fore.YELLOW + " >> ").lower()
+        print(Fore.RED + "\n  Invalid answer, enter go in or go around\n")
+        userInput = input(Fore.YELLOW + "  >> ").lower()
     if userInput == "go in":
         return mountain_cave()
     elif userInput == "go around":
