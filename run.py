@@ -403,34 +403,35 @@ def the_waterfall():
         "\t\t- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to take a cooling bath: ")
     print_slow(
-        "\n|tWhen you have finished swimming, you continue your hike\n" 
-        "\ttowards the top of the mountain.\n\n"
+        "\n\tWhen you have finished swimming, you continue\n" 
+        "\tyour hike towards the top of the mountain.\n\n"
         "\tAt dusk you have finally arrived at a high mountain.\n" 
         "\tYou choose to camp here for the night.\n"
     )
 
 def the_rescue():
     clear()
-    print_slow("\n- " + name + " wake up wake up!!\n\n", Fore.BLUE)
     print_slow(
-        "You wake up with a jolt and hear the\n"
-        "muffled sound of a helicopter.\n"
-        "hurriedly you start looking around to find\n" 
-        "different ways to get up the mountain.\n\n" 
-        "A little way off you see a path\n" 
-        "winding through the mountain.\n\n"
+        "\n\t\t- " + name + " wake up wake up!!\n\n", Fore.BLUE)
+    print_slow(
+        "\tYou wake up with a jolt and hear the\n"
+        "\tmuffled sound of a helicopter.\n"
+        "\thurriedly you start looking around to find\n" 
+        "\tdifferent ways to get up the mountain.\n\n" 
+        "\tA little way off you see a path\n" 
+        "\twinding through the mountain.\n\n"
     )
     print_slow(
-        "Should we take the fast track and climb\n"
-        "the mountain or should we take the path" 
-        "through the mountain?\n\n", Fore.BLUE
+        "\t\t- Should we take the fast track and climb\n"
+        "\t\t  the mountain or should we take the path\n" 
+        "\t\t  through the mountain?\n\n", Fore.BLUE
     )
     time.sleep(1)
-    print(Fore.GREEN + "path or climb?\n\n")
-    the_last_choice = input(Fore.YELLOW + ">> ").lower()
+    print(Fore.GREEN + "  path or climb?\n\n")
+    the_last_choice = input(Fore.YELLOW + "  >> ").lower()
     while the_last_choice not in ("path", "climb"):
-        print(Fore.RED + "Invalid answer, enter path or climb\n")
-        the_last_choice = input(Fore.YELLOW + ">> ").lower()
+        print(Fore.RED + "\n  Invalid answer, enter path or climb\n")
+        the_last_choice = input(Fore.YELLOW + "  >> ").lower()
     if the_last_choice == "path":
         return through_the_mountain()
     elif the_last_choice == "climb":
@@ -440,11 +441,11 @@ def the_rescue():
 def through_the_mountain():
     clear()
     print_slow(
-        "\nYou run as fast as you can\n"
-        "up the winding path. You are tired\n"
-        "but manage to get to the top.\n\n"
-        "You take off your shirts and start\n"
-        "waving them with all the strength you have left.\n"
+        "\nYou run as fast as you can up\n"
+        "the winding path. You are tired but\n"
+        "manage to get to the top. You\n\n"
+        "take off your shirts and start waving\n"
+        "them with all the strength you have left.\n"
         "You see the helicopter turning and landing.\n\n"
     )
     input(Fore.GREEN + "Press enter to go to the helicopter! ")
@@ -488,7 +489,7 @@ def main():
     # the_stranded_friends()
     # the_shelter()
     # the_serch_for_water()
-    mountain_top()
+    # mountain_top()
     the_rescue()
 
 
