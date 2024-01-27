@@ -505,15 +505,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    # welcome()
-    # player_answer()
-    # player_name()
-    # intro()
-    # the_stranded_friends()
-    # the_shelter()
-    # the_serch_for_water()
-    # mountain_top()
-    # the_rescue()
+    welcome()
+    player_answer()
+    player_name()
+    intro()
+    the_stranded_friends()
+    the_shelter()
+    the_serch_for_water()
+    mountain_top()
+    the_rescue()
 
 
 main()
