@@ -373,23 +373,22 @@ def mountain_top():
 def the_rickety_bridge():
     clear()
     print_slow(
-        "A bit into the path you will come to a\n" 
-        "rickety bridge, and under the bridge there\n" 
-        "is a precipice. You quickly notice that there\n" 
-        "is no other way but to cross the bridge.\n\n"
+        "\tA bit into the path you will come to a\n" 
+        "\trickety bridge, and under the bridge there\n" 
+        "\tis a precipice. You quickly notice that there\n" 
+        "\tis no other way but to cross the bridge.\n\n"
     )
     print_slow(
-        "When you get to the middle of the bridge,\n" 
-        "you notice that several planks are missing,\n"
-        "and you have to jump over the big hole to\n" 
-        "get to the other side of the bridge.\n\n"
+        "\tWhen you get to the middle of the bridge,\n" 
+        "\tyou notice that several planks are missing,\n"
+        "\tand you have to jump over the big hole to\n" 
+        "\tget to the other side of the bridge.\n\n"
     )
-    print_slow("- I jump first Oliwer!\n\n", Fore.YELLOW)
-    input(Fore.GREEN + "Press enter to jump: ")
-    clear()
+    print_slow("\t\t- I jump first Oliwer!\n\n", Fore.YELLOW)
+    input(Fore.GREEN + "  Press enter to jump: ")
     print_slow(
-        "\nWhen you start to jump, the bridge collapses\n" 
-        "and you both fall into the abyss and do not survive.\n")
+        "\n\tWhen you start to jump, the bridge collapses\n" 
+        "\tand you both fall into the abyss and do not survive.\n")
     time.sleep(1)
     sys.exit()
     
@@ -397,17 +396,17 @@ def the_rickety_bridge():
 def the_waterfall():
     clear()
     print_slow(
-        "\nA little further into the path\n"
-        "you will come to a large waterfall.\n\n"
+        "\n\tA little further into the path\n"
+        "\tyou will come to a large waterfall.\n\n"
     )
-    print_slow("- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
-    input(Fore.GREEN + "Press enter to take a cooling bath: ")
-    clear()
     print_slow(
-        "\nWhen you have finished swimming, you continue your hike\n" 
-        "towards the top of the mountain.\n\n"
-        "At dusk you have finally arrived at a high mountain.\n" 
-        "You choose to camp here for the night.\n"
+        "\t\t- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
+    input(Fore.GREEN + "  Press enter to take a cooling bath: ")
+    print_slow(
+        "\n|tWhen you have finished swimming, you continue your hike\n" 
+        "\ttowards the top of the mountain.\n\n"
+        "\tAt dusk you have finally arrived at a high mountain.\n" 
+        "\tYou choose to camp here for the night.\n"
     )
 
 def the_rescue():
