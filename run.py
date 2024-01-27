@@ -25,6 +25,12 @@ def clear():
     This function clears the screen from written text.
     """
     os.system("clear")
+    
+def restart():
+    """ Restarts the game"""
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+
 
 
 def welcome():
@@ -59,7 +65,8 @@ def player_answer():
     if answer == "no":
         print_slow("\n\tOh, that's to bad! Maybe another time then :)\n\n")
         time.sleep(1)
-        sys.exit()
+        clear()
+        restart()
     elif answer == "yes":
         clear()
         print_slow(
@@ -91,7 +98,7 @@ def player_name():
                     "\tadventure you have ever been on!\n\n"
                 )
                 input(
-                    Fore.GREEN + "  So when you feel ready to begin just"
+                    Fore.GREEN + "  So when you feel ready to begin just "
                     "hit enter! "
                 )
                 break
@@ -341,11 +348,16 @@ def the_field():
         "\tthat you stumble right into the quicksand.\n"
         "\tAnd neither you nor Oliwer survive.\n\n"
     )
-    time.sleep(1)
-    sys.exit()
+    print(Fore.CYAN + "  ****************************"
+          "***********************\n")
+    input(Fore.GREEN + "  press enter to try again! ")
+    restart()
 
 
 def mountain_top():
+    """
+    
+    """
     clear()
     print_slow(
         "\n\tSeveral weeks have passed since you found the\n"
@@ -394,9 +406,12 @@ def the_rickety_bridge():
     input(Fore.GREEN + "  Press enter to jump: ")
     print_slow(
         "\n\tWhen you start to jump, the bridge collapses\n"
-        "\tand you both fall into the abyss and do not survive.\n")
-    time.sleep(1)
-    sys.exit()
+        "\tand you both fall into the abyss and do not survive.\n\n"
+    )
+    print(Fore.CYAN + "  ****************************"
+          "***********************\n")
+    input(Fore.GREEN + "  press enter to try again! ")
+    restart()
 
 
 def the_waterfall():
@@ -480,8 +495,10 @@ def the_climb():
         "\tdisappears into the distance, and everything\n"
         "\tbecomes black and empty.\n\n"
     )
-    time.sleep(1)
-    sys.exit()
+    print(Fore.CYAN + "  ****************************"
+          "***********************\n")
+    input(Fore.GREEN + "  press enter to try again! ")
+    restart()
 
 
 def main():
@@ -491,12 +508,12 @@ def main():
     welcome()
     player_answer()
     player_name()
-    intro()
-    the_stranded_friends()
-    the_shelter()
+    # intro()
+    # the_stranded_friends()
+    # the_shelter()
     the_serch_for_water()
-    mountain_top()
-    the_rescue()
+    # mountain_top()
+    # the_rescue()
 
 
 main()
