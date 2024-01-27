@@ -151,7 +151,7 @@ def the_stranded_friends():
         "\t\t- The boat sank. When I woke up I\n"
         "\t\t  found you lying a few meters away.\n"
         "\t\t  I ran as fast as I could to give you first aid.\n"
-        "\t\t  The waves seem to have driven us to some\n"
+        "\t\t  The waves seems to have driven us to some\n"
         "\t\t  sort of island.\n\n", Fore.BLUE
     )
     print_slow("\tOliwer extends his hand to help you up.\n")
@@ -479,15 +479,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    # welcome()
-    # player_answer()
+    welcome()
+    player_answer()
     player_name()
-    # intro()
-    # the_stranded_friends()
+    intro()
+    the_stranded_friends()
     the_shelter()
-    # the_serch_for_water()
-    # mountain_top()
-    # the_rescue()
+    the_serch_for_water()
+    mountain_top()
+    the_rescue()
 
 
 main()
