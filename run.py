@@ -89,7 +89,7 @@ def player_name():
                     "\tyour most exciting, fast-paced and dangerous\n"
                     "\tadventure you have ever been on!\n\n"
                 )
-                input(Fore.GREEN + " So when you feel ready to begin just hit enter! ")
+                input(Fore.GREEN + "  So when you feel ready to begin just hit enter! ")
                 break
         except Exception as e:
             print(Fore.RED + f" An error occurred: {e}")
@@ -135,7 +135,7 @@ def the_stranded_friends():
         "\tout to you and you begin to regain consciousness.\n\n"
     )
     time.sleep(1)
-    input(Fore.GREEN + " Press enter to wake up! ")
+    input(Fore.GREEN + "  Press enter to wake up! ")
     print_slow(
         "\n\tSlowly you open your eyes and see your\n"
         "\tfriend Oliwer leaning over you!\n\n"
@@ -145,6 +145,7 @@ def the_stranded_friends():
     )
     time.sleep(1)
     input(Fore.GREEN + "  Press enter to talk with Oliwer! ")
+    clear()
     print_slow("\n\t\t- what happened? where are we?\n\n", Fore.YELLOW)
     print_slow(
         "\t\t- The boat sank. When I woke up I\n"
@@ -171,7 +172,7 @@ def the_shelter():
         "\t\t  go further into the island to seek\n"
         "\t\t  shelter for the night?\n\n", Fore.BLUE
     )
-    print(Fore.GREEN + "  build or seek:\n")
+    print(Fore.GREEN + "  build or seek?\n")
     choice = input(Fore.YELLOW + "  >> ").lower()
     while choice not in ("build", "seek"):
         print(Fore.RED + "\n  Invalid choice, you must choose build or seek!\n")
@@ -220,16 +221,13 @@ def the_winding_path():
     )
     print_slow("\t\t - " + name + " look!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to look where Oliwer is pointing! ")
-    clear()
     print_slow( 
         "\n\tThere are plants of all kinds and colors.\n"
-        "\tAnd lots of different kind of berries.\n\n")
-    input(Fore.GREEN + " press enter to pick berries: ")    
-    clear()
+        "\tAnd lots of different kinds of berries.\n\n")
+    input(Fore.GREEN + "  press enter to pick berries! ")    
     print_slow(
-        "\n\tWhen you have picked your pockets\n" 
-        "\tfull of edible berries, it has started\n" 
-        "\tto get dark.\n\n"
+        "\n\tWhen you have picked your pockets full of\n" 
+        "\tedible berries, it has started to get dark.\n" 
         "\tYou are forced to seek shelter under a\n" 
         "\tlarge tree for the night.\n"
         "\tYou satisfy part of your hunger with the\n"
@@ -481,15 +479,15 @@ def main():
     """
     This function calls all the other functions.
     """
-    welcome()
-    player_answer()
+    # welcome()
+    # player_answer()
     player_name()
-    intro()
-    the_stranded_friends()
+    # intro()
+    # the_stranded_friends()
     the_shelter()
-    the_serch_for_water()
-    mountain_top()
-    the_rescue()
+    # the_serch_for_water()
+    # mountain_top()
+    # the_rescue()
 
 
 main()
