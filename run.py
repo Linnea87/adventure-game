@@ -255,7 +255,6 @@ def the_serch_for_water():
         "\tyou will arrive at a mountain cave.\n\n"
     )
     time.sleep(1)
-    clear()
     print_slow(
         "\n\t\t- Do we really have to go in there " + name + " ?\n"
         "\t\t  It's jet black.\n"
@@ -281,33 +280,32 @@ def mountain_cave():
     """
     clear()
     print_slow(
-        " \nYou enter the cave and after a while\n"
-        " your eyes start to get used to the darkness\n"
-        " You walk along the cave walls to move forward.\n\n"
+        "\n\tYou enter the cave and after a while\n"
+        "\tyour eyes start to get used to the darkness\n"
+        "\tYou walk along the cave walls to move forward.\n\n"
     )
     time.sleep(1)
-    print_slow(" - What is that sound?\n\n", Fore.BLUE)
+    print_slow("\t\t- What is that sound?\n\n", Fore.BLUE)
     time.sleep(1)
-    print_slow(" - I don't know, let's follow it!\n\n", Fore.YELLOW)
-    input(Fore.GREEN + " Press enter to follow the sound: ")
-    clear()
+    print_slow("\t\t- I don't know, let's follow it!\n\n", Fore.YELLOW)
+    input(Fore.GREEN + "  Press enter to follow the sound! ")
     print_slow(
-        " \nYou begin to approach where the sound is\n" 
-        " coming from and you glimpse daylight.\n"
-        " You follow the light and come to a spring\n" 
-        " full of drinkable rainwater.\n\n"
+        "\n\tYou begin to approach where the sound is\n" 
+        "\tcoming from and you glimpse daylight.\n"
+        "\tYou follow the light and come to a spring\n" 
+        "\tfull of drinkable rainwater.\n\n"
     )
     print_slow(
-        " You run forward and start drinking\n"
-        " as much as you can handle.\n"
-        " When you are no longer thirsty, you\n"
-        " look for something to refill your\n"
-        " water with without any luck.\n\n"
+        "\tYou run forward and start drinking\n"
+        "\tas much as you can handle.\n"
+        "\tWhen you are no longer thirsty, you\n"
+        "\tlook for something to refill your\n"
+        "\twater with without any luck.\n\n"
     )
     print_slow(
-        " You therefore decide to find a\n" 
-        " good place outside the cave\n"
-        " to build a new camp.\n"
+        "\tYou therefore decide to find a\n" 
+        "\tgood place outside the cave\n"
+        "\tto build a new camp.\n"
     )
     time.sleep(1)
  
@@ -319,24 +317,24 @@ def the_field():
     """
     clear()
     print_slow(
-        "\nYou go around the mountain cave\n" 
-        "and find another way.\n\n"
-        "The sun is scorching and\n"
-        "after hours of hiking\n"
-        "you are so tired and\n" 
-        "dehydrated that you\n"
-        "don't notice that you have ended up\n"
-        "in the middle of a field of quicksand.\n\n"
+        "\n\tYou go around the mountain cave\n" 
+        "\tand find another way.\n\n"
+        "\tThe sun is scorching and\n"
+        "\tafter hours of hiking\n"
+        "\tyou are so tired and\n" 
+        "\tdehydrated that you\n"
+        "\tdon't notice that you have ended up\n"
+        "\tin the middle of a field of quicksand.\n\n"
     )
-    print_slow("- Help, I'm sinking!!!!\n\n", Fore.BLUE)
+    print_slow("\t\t- Help, I'm sinking!!!!\n\n", Fore.BLUE)
     time.sleep(1)
-    input(Fore.GREEN + "Press enter to help Oliwer: ")
+    input(Fore.GREEN + "  Press enter to help Oliwer! ")
     clear()
     print_slow(
-        "\nYou run to Oliwer, but you are so tired\n"
-        "and have no energy left,\n"
-        "that you stumble right into the quicksand.\n"
-        "And neither you nor Oliwer survive.\n\n"
+        "\n\tYou run to Oliwer, but you are so tired\n"
+        "\tand have no energy left,\n"
+        "\tthat you stumble right into the quicksand.\n"
+        "\tAnd neither you nor Oliwer survive.\n\n"
     )
     time.sleep(1)
     sys.exit()
@@ -344,29 +342,28 @@ def the_field():
 def mountain_top():
     clear()
     print_slow(
-        "\nSeveral weeks have passed since you found\n" 
-        "the mountain cave. You've set off to look\n"
-        "for edibles as the food you've collected\n" 
-        "starts to wear out.\n\n"
+        "\n\tSeveral weeks have passed since you found the\n" 
+        "\tmountain cave. You've set off to look for\n"
+        "\tedibles as the food you've collected starts\n" 
+        "\tto wear out.\n\n"
     )
     print_slow(
-        "- " + name + " do you see what " 
+        "\t\t- " + name + " do you see what " 
         "i see over there?\n\n", Fore.BLUE
     )
-    input(Fore.GREEN + "Press enter to answer Oliwer: ")
-    clear()
-    print_slow("\n\n- Yes I see, it's the top of a mountain!\n", Fore.YELLOW)
+    input(Fore.GREEN + "  Press enter to answer Oliwer! ")
+    print_slow("\n\t\t- Yes I see, it's the top of a mountain!\n", Fore.YELLOW)
     time.sleep(1)
     print_slow(
-        "\nEagerly, you start walking towards the mountain top.\n"
-        "After you have hiked for a few hours, the path splits\n" 
-        "and the trees obscure the view of the mountain top.\n\n"
+        "\n\tEagerly, you start walking towards the mountain top.\n"
+        "\tAfter you have hiked for a few hours, the path splits\n" 
+        "\tand the trees obscure the view of the mountain top.\n\n"
     )
-    print(Fore.GREEN + "right or left?\n")
-    path = input(">> ").lower()
+    print(Fore.GREEN + "  right or left?\n")
+    path = input("  >> ").lower()
     while path not in ("right", "left"):
-        print(Fore.RED + "Invalid answer, choose right or left\n")
-        path = input(">> ").lower()
+        print(Fore.RED + "\n  Invalid answer, choose right or left\n")
+        path = input("  >> ").lower()
     if path == "right":
         return the_rickety_bridge()
     elif path == "left":
@@ -485,13 +482,13 @@ def main():
     """
     This function calls all the other functions.
     """
-    welcome()
-    player_answer()
+    # welcome()
+    # player_answer()
     player_name()
-    intro()
-    the_stranded_friends()
-    the_shelter()
-    the_serch_for_water()
+    # intro()
+    # the_stranded_friends()
+    # the_shelter()
+    # the_serch_for_water()
     mountain_top()
     the_rescue()
 
