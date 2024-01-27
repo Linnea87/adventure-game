@@ -441,17 +441,17 @@ def the_rescue():
 def through_the_mountain():
     clear()
     print_slow(
-        "\nYou run as fast as you can up\n"
-        "the winding path. You are tired but\n"
-        "manage to get to the top. You\n\n"
-        "take off your shirts and start waving\n"
-        "them with all the strength you have left.\n"
-        "You see the helicopter turning and landing.\n\n"
+        "\n\tYou run as fast as you can up\n"
+        "\tthe winding path. You are tired but\n"
+        "\tmanage to get to the top. You\n\n"
+        "\ttake off your shirts and start waving\n"
+        "\tthem with all the strength you have left.\n"
+        "\tYou see the helicopter turning and landing.\n\n"
     )
-    input(Fore.GREEN + "Press enter to go to the helicopter! ")
+    input(Fore.GREEN + "  Press enter to go to the helicopter! ")
     print_slow(
-        "You get into the helicopter that takes you home\n"
-        "after several weeks of survival on the island!\n")
+        "\tYou get into the helicopter that takes you home\n"
+        "\tafter several weeks of survival on the island!\n")
     time.sleep(1)
     sys.exit()
 
@@ -459,20 +459,19 @@ def through_the_mountain():
 def the_climb():
     clear()
     print_slow(
-        "\nYou start climbing up the mountain.\n"
-        "Halfway up, fatigue starts to set in\n"
-        "and you get lactic acid in both your legs and arms.\n\n"
-        "Oliwer, who climbs first, loses his grip and falls.\n\n"
+        "\n\tYou start climbing up the mountain.\n"
+        "\tHalfway up, fatigue starts to set in\n"
+        "\tand you get lactic acid in both your legs and arms.\n\n"
+        "\tOliwer, who climbs first, loses his grip and falls.\n\n"
     )
     time.sleep(1)
-    input(Fore.GREEN + "Press enter to save Oliver! ")
-    clear()
+    input(Fore.GREEN + "  Press enter to save Oliver! ")
     print_slow(
-        "\n You reach to try to grab Oliver's hand,\n" 
-        "but you lose your grip with your other hand and fall.\n" 
-        "You hear how the sound of the helicopter\n"
-        "disappears into the distance, and everything\n" 
-        "becomes black and empty.\n\n"
+        "\n\tYou reach to try to grab Oliver's hand,\n" 
+        "\tbut you lose your grip with your other hand and fall.\n" 
+        "\tYou hear how the sound of the helicopter\n"
+        "\tdisappears into the distance, and everything\n" 
+        "\tbecomes black and empty.\n\n"
     )
     time.sleep(1)
     sys.exit()
@@ -482,14 +481,14 @@ def main():
     """
     This function calls all the other functions.
     """
-    # welcome()
-    # player_answer()
+    welcome()
+    player_answer()
     player_name()
-    # intro()
-    # the_stranded_friends()
-    # the_shelter()
-    # the_serch_for_water()
-    # mountain_top()
+    intro()
+    the_stranded_friends()
+    the_shelter()
+    the_serch_for_water()
+    mountain_top()
     the_rescue()
 
 
