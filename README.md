@@ -6,6 +6,23 @@ This is a text-based adventure game.
 
 The game invites the user to an exciting interactive story, where the user's different choices controls the direction of the story.
 
+Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press enter to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game.
+
+## Project goals
+
+* Write code that is clean and readable.
+
+* Write code where the user is interactive in the story.
+
+* Hold the user's interest with an exciting story.
+
+* Create a design that lightens up the text and makes the game user-friendly.
+
+## Features
+### Existing Features
+### Future Features
+
+
 ## Data Model
 ### Flowchart
 I used a flowchart from [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
@@ -16,14 +33,39 @@ to map out how I envisioned the logic of the game. This flowchart is a basis for
 ### Imports
 I've used the following Python packages and/or external imported packages.
 
-* <mark style="background:pink">sys</mark>: used for the restart() and print_slow() functions.
-* <mark style="background:pink">os</mark>: used for the clear() function.
-* <mark style="background:pink">time</mark>: used for time.sleep()function.
-* <mark style="background:pink">pyfiglet</mark>: used for including the ASCII art.
-* <mark style="background:pink">colorama</mark>: used for including colors.
+* `sys`: used for the restart() and print_slow() functions.
+* `os`: used for the clear() function.
+* `time`: used for time.sleep()function.
+* `pyfiglet`: used for including the ASCII art.
+* `colorama`: used for including colors.
 
 ## Testing
-## Deployments
+* Throughout this project I have been testing the game by running it in the gitpod terminal.
+* Tested in Heroku terminal aswell
+* The code has been run through the Code Institutes Linter with no errors.
+
+![Python Linter](docs/linter_1.webp)
+
+![Python Linter](docs/linter_2.webp)
+## Deployment
+### Adding, committing and pushing code
+* All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
+* All code has been regurlary added, committed and pushed throughout the project.
+* The commands being used are `git add <file>`,
+  `git commit -m “commit message”` and
+  `git push`
+* Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project. 
+### Deploying to Heroku
+I deployed my project directly to Heroku by doing the following:
+
+* Created an account at Heroku.com.
+* Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`
+* Clicked on "Create new app" and named it adventure-game.
+* Clicked on Settings and added Backpacks - Python and Node.js.
+* Made sure the backpacks were in the right order.
+* From the new app Settings, I clicked Reveal Config Vars, and sets the value of KEY to PORT, and the value to 8000 then selected add.
+* Connected my GitHub profile and found the right Repository.
+* Manually deployed the page and clicked "Eanble automatic deploys" at the same time.
 ## Credits
 
 **Source**|**Location**|**Notes**
