@@ -55,7 +55,11 @@ The primary functions used on this application are:
     - Calls all the game functions 
 
 ### Design
-Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game.
+Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game. 
+
+An example of such input is shown below:
+
+![Enter input](docs/enter-input.webp)
 
 In my design, I have also made frequent use of:
 
