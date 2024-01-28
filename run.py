@@ -268,7 +268,7 @@ def the_serch_for_water():
     )
     time.sleep(1)
     print_slow(
-        "\n\t\t- Do we really have to go in there " + name + " ?\n"
+        "\n\t\t- Do we really have to go in there " + name + "?\n"
         "\t\t  It's jet black.\n"
         "\t\t  Isn't it better to try to walk\n"
         "\t\t  around the cave instead?\n\n", Fore.BLUE
@@ -470,12 +470,15 @@ def through_the_mountain():
         "\tthem with all the strength you have left.\n"
         "\tYou see the helicopter turning and landing.\n\n"
     )
-    input(Fore.GREEN + "  Press enter to go to the helicopter! ")
+    input(Fore.GREEN + "  Press enter to go to the helicopter\n! ")
     print_slow(
         "\tYou get into the helicopter that takes you home\n"
-        "\tafter several weeks of survival on the island!\n")
-    time.sleep(1)
-    sys.exit()
+        "\tafter several weeks of survival on the island!\n"
+    )
+    print(Fore.CYAN + "  ****************************"
+          "***********************\n")
+    input(Fore.GREEN + "  press enter to try again! ")
+    restart()
 
 
 def the_climb():

@@ -47,12 +47,27 @@ I've used the following Python packages and/or external imported packages.
 * [Heroku](https://dashboard.heroku.com/apps) used for hosting the deployed back-end site.
 
 ## Testing
-* Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal.
+* Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal. 
+
+* Below all the validation that has been done is shown.
 
 ### Input Validation
+* As I discussed in the introduction, I have only validated those inputs which are the main key to progress in the game. 
 
+* The gifs show that error messages with instructions are displayed if the user enters an invalid answer
  #### The yes or no input
 ![Yes or no](docs/yes-no.gif)
+#### The name input
+![Name](docs/name-input.gif)
+#### The build or seek input
+![Build,Seek](docs/build-seek.gif)
+#### The go in or go around input
+![Go in or go around](docs/go-in-go-around.gif)
+#### The right or left input
+![Right or left](docs/right-left.gif)
+#### The path or climb input
+![Path or climb](docs/path-climb.gif)
+
 ### Code Validation
 * The code has been run through the Code Institutes Linter with no errors.
 
