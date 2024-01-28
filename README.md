@@ -8,41 +8,13 @@ The game invites the user to an exciting interactive story, where the user's dif
 
 ### Project goals
 
-* Write code that is clean and readable.
+- Write code that is clean and readable.
 
-* Write code where the user is interactive in the story.
+- Write code where the user is interactive in the story.
 
-* Hold the user's interest with an exciting story.
+- Hold the user's interest with an exciting story.
 
-* Create a design that lightens up the text and makes the game user-friendly.
-
-## The game design
-Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game.
-
-In my design, I have also made frequent use of:
-
-- `\n` for new line
-- `\t` for move the text a bit towards the center.
-
-The colors used are well chosen:
-
-- `Red` is used for error messages
-
-- `White` is used for the narration
-
-- `Yellow` is used for the user's voice
-
-- `Blue` is used for the friend's voice
-
-- `Green` is used when the user is expected to be interactive in the game.
- 
-All these choices are to lighten up all the text, and make the game more user-friendly.
-
-
-## Features
-### Existing Features
-### Future Features
-
+- Create a design that lightens up the text and makes the game user-friendly.
 
 ## Data Model
 ### Flowchart
@@ -50,16 +22,6 @@ I used a flowchart from [Lucidchart](https://www.lucidchart.com/pages/ER-diagram
 to map out how I envisioned the logic of the game. This flowchart is a basis for the most important functions and directions of the game. Therefore, the number of scenes may differ from the final result.
 
 ![Flowchart](docs/blank_diagram.webp)
-
-### Imports
-I've used the following Python packages and/or external imported packages.
-
-* `sys`: used for the restart() and print_slow() functions.
-* `os`: used for the clear() function.
-* `time`: used for time.sleep()function.
-* `pyfiglet`: used for including the ASCII art.
-* `colorama`: used for including colors.
-
 ### Functions
 The primary functions used on this application are:
 
@@ -92,24 +54,53 @@ The primary functions used on this application are:
 - `main()`
     - Calls all the game functions 
 
+### Design
+Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game.
 
+In my design, I have also made frequent use of:
+
+- `\n` for new line
+- `\t` for move the text a bit towards the center.
+
+The colors used are well chosen:
+
+- `Red` is used for error messages
+
+- `White` is used for the narration
+
+- `Yellow` is used for the user's voice
+
+- `Blue` is used for the friend's voice
+
+- `Green` is used when the user is expected to be interactive in the game.
+ 
+All these choices are to lighten up all the text, and make the game more user-friendly.
+
+### Imports
+I've used the following Python packages and/or external imported packages.
+
+- `sys`: used for the restart() and print_slow() functions.
+- `os`: used for the clear() function.
+- `time`: used for time.sleep()function.
+- `pyfiglet`: used for including the ASCII art.
+- `colorama`: used for including colors.
 
 ## Technologies
-* [Python](https://www.python.org/) used as the back-end programming language.
-* [Git](https://git-scm.com/) used for version control. (git add, git commit, git push)
-* [GitHub](github.com) used for secure online code storage.
-* [Gitpod](https://gitpod.io/) used as a cloud-based IDE for development with Code Institutes template.
-* [Heroku](https://dashboard.heroku.com/apps) used for hosting the deployed back-end site.
+- [Python](https://www.python.org/) used as the back-end programming language.
+- [Git](https://git-scm.com/) used for version control. (git add, git commit, git push)
+- [GitHub](github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io/) used as a cloud-based IDE for development with Code Institutes template.
+- [Heroku](https://dashboard.heroku.com/apps) used for hosting the deployed back-end site.
 
 ## Testing
-* Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal. 
+Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal.
 
-* Below all the validation that has been done is shown.
+Below all the validation that has been done is shown.
 
 ### Input Validation
-* As I discussed in the introduction, I have only validated those inputs which are the main key to progress in the game. 
+As I discussed in the `design` section, I have only validated the inputs that are the main key for the game to continue. 
 
-* The gifs show that error messages with instructions are displayed if the user enters an invalid answer
+- The gifs show that error messages with instructions are displayed if the user enters an invalid answer
  #### The yes or no input
 ![Yes or no](docs/yes-no.gif)
 #### The name input
@@ -124,7 +115,7 @@ The primary functions used on this application are:
 ![Path or climb](docs/path-climb.gif)
 
 ### Code Validation
-* The code has been run through the Code Institutes Linter with no errors.
+- The code has been run through the Code Institutes Linter with no errors.
 
 ![Python Linter](docs/linter_1.webp)
 
@@ -132,23 +123,23 @@ The primary functions used on this application are:
 
 ## Deployment
 ### Adding, committing and pushing code
-* All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
-* All code has been regurlary added, committed and pushed throughout the project.
-* The commands being used are `git add <file>`,
+- All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
+- All code has been regurlary added, committed and pushed throughout the project.
+- The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
   `git push`
-* Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project. 
+- Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project. 
 ### Deploying to Heroku
 I deployed my project directly to Heroku by doing the following:
 
-* Created an account at Heroku.com.
-* Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`
-* Clicked on "Create new app" and named it adventure-game.
-* Clicked on Settings and added Backpacks - Python and Node.js.
-* Made sure the backpacks were in the right order.
-* From the new app Settings, I clicked Reveal Config Vars, and sets the value of KEY to PORT, and the value to 8000 then selected add.
-* Connected my GitHub profile and found the right Repository.
-* Manually deployed the page and clicked "Eanble automatic deploys" at the same time.
+- Created an account at Heroku.com.
+- Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`
+- Clicked on "Create new app" and named it adventure-game.
+- Clicked on Settings and added Backpacks - Python and Node.js.
+- Made sure the backpacks were in the right order.
+- From the new app Settings, I clicked Reveal Config Vars, and sets the value of KEY to PORT, and the value to 8000 then selected add.
+- Connected my GitHub profile and found the right Repository.
+- Manually deployed the page and clicked "Eanble automatic deploys" at the same time.
 ## Credits
 
 **Source**|**Location**|**Notes**
@@ -164,4 +155,4 @@ I deployed my project directly to Heroku by doing the following:
 
 ## Acknowledgments
 
-* Thanks to my mentor [Graeme Taylor](https://github.com/G-Taylor) who always gives me good tips, advice and feedback on how to plan and implement my projects. And for this project advised me how to best use the flowchart and gif recording.
+- Thanks to my mentor [Graeme Taylor](https://github.com/G-Taylor) who always gives me good tips, advice and feedback on how to plan and implement my projects. And for this project advised me how to best use the flowchart and gif recording.
