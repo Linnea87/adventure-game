@@ -40,6 +40,38 @@ I've used the following Python packages and/or external imported packages.
 * `colorama`: used for including colors.
 
 ### Functions
+The primary functions used on this application are:
+
+- `print()`
+    - Prints out different questions to the user.
+- `print_slow()`
+    - Typing the text slow.
+- `input()`
+    - Prompts the user to make different choices.
+- `clear()`
+    - clears the console.
+- `time.sleep()`
+    - Delay the text before it clears out.
+- `restart()`
+     - Restart the game.
+- `welcome()`
+    Displays the title of the game
+- `intro()`
+    - displays an intro text
+- `the_stranded_friends()`
+    - Displays main scene one.
+- `the_shelter()`
+    - Displays main scen two
+- `the_serch_for_water()`
+    - Displays main scene three
+- `mountain_top()`
+    - Displays main scene four
+- `the_rescue()` 
+    - displays main scene five.
+- `main()`
+    - Calls all the game functions 
+
+
 
 ## Technologies
 * [Python](https://www.python.org/) used as the back-end programming language.
