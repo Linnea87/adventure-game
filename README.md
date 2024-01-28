@@ -108,6 +108,7 @@ I've used the following Python packages and/or external imported packages.
     - When the user hits enter, the game starts with an intro and then the first scene in the game dispalyes.
 
     `part of scene one`
+    
     ![part of scene one](docs/scene-one.gif)
 
 - The Main scenes
