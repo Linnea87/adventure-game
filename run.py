@@ -87,10 +87,10 @@ def player_name():
             global name
             name = input(Fore.YELLOW + "  >> ")
             if not name.isalpha():
-                print(Fore.RED + "\n  Your name can only contain letters!")
+                print(Fore.RED + "\n  Your name can only contain letters!\n")
             elif len(name) < 3:
                 print(
-                    Fore.RED + "\n  Your name needs to be 3 letters or more!")
+                    Fore.RED + "\n  Your name needs to be 3 letters or more!\n")
             else:
                 print_slow(
                     "\n\t" + name + ", you are now about to begin perhaps\n"

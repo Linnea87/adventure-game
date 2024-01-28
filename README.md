@@ -39,14 +39,27 @@ I've used the following Python packages and/or external imported packages.
 * `pyfiglet`: used for including the ASCII art.
 * `colorama`: used for including colors.
 
+## Technologies
+* [Python](https://www.python.org/) used as the back-end programming language.
+* [Git](https://git-scm.com/) used for version control. (git add, git commit, git push)
+* [GitHub](github.com) used for secure online code storage.
+* [Gitpod](https://gitpod.io/) used as a cloud-based IDE for development with Code Institutes template.
+* [Heroku](https://dashboard.heroku.com/apps) used for hosting the deployed back-end site.
+
 ## Testing
-* Throughout this project I have been testing the game by running it in the gitpod terminal.
-* Tested in Heroku terminal aswell
+* Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal.
+
+### Input Validation
+
+ #### The yes or no input
+![Yes or no](docs/yes-no.gif)
+### Code Validation
 * The code has been run through the Code Institutes Linter with no errors.
 
 ![Python Linter](docs/linter_1.webp)
 
 ![Python Linter](docs/linter_2.webp)
+
 ## Deployment
 ### Adding, committing and pushing code
 * All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
