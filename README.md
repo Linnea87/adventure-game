@@ -124,13 +124,13 @@ As I discussed in the `design` section, I have only validated the inputs that ar
 
 ![Python Linter](docs/linter_2.webp)
 
-## Bugs
-My code broke in the_serch_for_water() function where the user's input are validated. 
-### Solved bugs
-- I had forgotten to give the input a specific name and solved this by naming that input to userInput.
-### Unresolved Bugs
+## Solved Bugs
+- My code broke in the_serch_for_water() function where the user's input are validated.
+    - I had forgotten to give the input a specific name and solved this by naming that input to userInput.
+- It was also broken in other validated inputs. 
+    - I solved this by adding .lower after each validated input 
+## Unresolved Bugs
 - No unresolved bugs.
-
 ## Deployment
 ### Adding, committing and pushing code
 - All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
