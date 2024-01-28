@@ -1,6 +1,6 @@
 # The Lost Island
 ![Mockup](docs/mockup.webp)
-![Live site](https://lost-island-82a0005e081c.herokuapp.com/)
+[Live site](https://lost-island-82a0005e081c.herokuapp.com/)
 ## Introduction
 This is a text-based adventure game.
 
