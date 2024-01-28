@@ -108,7 +108,7 @@ I've used the following Python packages and/or external imported packages.
     - When the user hits enter, the game starts with an intro and then the first scene in the game dispalyes.
 
     `part of scene one`
-    
+
     ![part of scene one](docs/scene-one.gif)
 
 - The Main scenes
@@ -117,7 +117,7 @@ I've used the following Python packages and/or external imported packages.
     ![The options](docs/first-choice.webp)
 
 - The options
-    - One option leads the user forward to win while the other option leads the user to the end of the game. The user is prompted to play again. Except in the first main scene where both options move the game forward
+    - One option leads the user forward to win. While the other option leads the user to the end of the game, and the user is prompted to play again. Except in the first main scene where both options move the game forward
 
     `example of an ending scene:`
 
