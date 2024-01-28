@@ -1,6 +1,6 @@
 # The Lost Island
 ![Mockup](docs/mockup.webp)
-[Live site](https://git.heroku.com/lost-island.git)
+![Live site](https://git.heroku.com/lost-island.git)
 ## Introduction
 This is a text-based adventure game.
 
