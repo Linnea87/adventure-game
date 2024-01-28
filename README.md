@@ -59,7 +59,7 @@ Since this is a text-based game, I have made an active choice not to validate th
 
 An example of such input is shown below:
 
-![Enter input](docs/enter-input.webp)
+![Enter input](docs/enter-input.gif)
 
 In my design, I have also made frequent use of:
 
@@ -90,6 +90,50 @@ I've used the following Python packages and/or external imported packages.
 - `colorama`: used for including colors.
 
 ## Features
+ 
+ - Welcome
+    - The game's title with ASCII art and a welcome text with a question is dispalyed.
+    The user is prompted to answer.
+
+    `if the answer are no:`
+
+    ![No answer](docs/no-answer.gif)
+
+
+    `If the answer are yes:`
+    
+    ![Yes answer](docs/answer-yes.gif)
+
+- The game
+    - When the user hits enter, the game starts with an intro and then the first scene in the game dispalyes.
+
+    `part of scene one`
+    ![part of scene one](docs/scene-one.gif)
+
+- The Main scenes
+    - In all the main scenes there are always two options to choose from.   
+    
+    ![The options](docs/first-choice.webp)
+
+- The options
+    - One option leads the user forward to win while the other option leads the user to the end of the game. The user is prompted to play again. Except in the first main scene where both options move the game forward
+
+    `example of an ending scene:`
+
+    ![End scene](docs/one-end-scene.gif)
+
+    `example of when the game continues:`
+
+    ![Game continue](docs/game-continue.gif)
+- To survive the island
+    -  The user must make it all the way to the rescue and leave the island to survive this adventure. When the user succeeds the game restarts.
+
+    
+    `part of the final scene`
+
+    ![final scene](docs/final-scene.gif)
+
+
 
 
 ## Technologies

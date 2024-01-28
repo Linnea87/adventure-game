@@ -307,6 +307,7 @@ def mountain_cave():
         "\tYou follow the light and come to a spring\n"
         "\tfull of drinkable rainwater.\n\n"
     )
+    clear()
     print_slow(
         "\tYou run forward and start drinking\n"
         "\tas much as you can handle.\n"
@@ -435,7 +436,7 @@ def the_waterfall():
     )
     print_slow(
         "\t\t- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
-    input(Fore.GREEN + "  Press enter to take a cooling bath: ")
+    input(Fore.GREEN + "  Press enter to take a cooling bath! ")
     print_slow(
         "\n\tWhen you have finished swimming, you continue\n"
         "\tyour hike towards the top of the mountain.\n\n"
@@ -492,10 +493,10 @@ def through_the_mountain():
         "\tthem with all the strength you have left.\n"
         "\tYou see the helicopter turning and landing.\n\n"
     )
-    input(Fore.GREEN + "  Press enter to go to the helicopter\n! ")
+    input(Fore.GREEN + "  Press enter to go to the helicopter! ")
     print_slow(
-        "\tYou get into the helicopter that takes you home\n"
-        "\tafter several weeks of survival on the island!\n"
+        "\n\tYou get into the helicopter that takes you home\n"
+        "\tafter several weeks of survival on the island!\n\n"
     )
     print(
         Fore.CYAN + "  ****************************"
@@ -519,9 +520,9 @@ def the_climb():
         "\tOliwer, who climbs first, loses his grip and falls.\n\n"
     )
     time.sleep(1)
-    input(Fore.GREEN + "  Press enter to save Oliver! ")
+    input(Fore.GREEN + "  Press enter to save Oliwer! ")
     print_slow(
-        "\n\tYou reach to try to grab Oliver's hand,\n"
+        "\n\tYou reach to try to grab Oliwer's hand,\n"
         "\tbut you lose your grip with your other hand and fall.\n"
         "\tYou hear how the sound of the helicopter\n"
         "\tdisappears into the distance, and everything\n"
