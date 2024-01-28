@@ -348,8 +348,10 @@ def the_field():
         "\tthat you stumble right into the quicksand.\n"
         "\tAnd neither you nor Oliwer survive.\n\n"
     )
-    print(Fore.CYAN + "  ****************************"
-          "***********************\n")
+    print(
+        Fore.CYAN + "  ****************************"
+          "***********************\n"
+        )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
@@ -408,8 +410,10 @@ def the_rickety_bridge():
         "\n\tWhen you start to jump, the bridge collapses\n"
         "\tand you both fall into the abyss and do not survive.\n\n"
     )
-    print(Fore.CYAN + "  ****************************"
-          "***********************\n")
+    print(
+        Fore.CYAN + "  ****************************"
+          "***********************\n"
+        )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
@@ -475,9 +479,12 @@ def through_the_mountain():
         "\tYou get into the helicopter that takes you home\n"
         "\tafter several weeks of survival on the island!\n"
     )
-    print(Fore.CYAN + "  ****************************"
-          "***********************\n")
-    input(Fore.GREEN + "  press enter to try again! ")
+    print(
+        Fore.CYAN + "  ****************************"
+          "***********************\n"
+        )
+    time.sleep(1)
+    clear()
     restart()
 
 
@@ -498,8 +505,10 @@ def the_climb():
         "\tdisappears into the distance, and everything\n"
         "\tbecomes black and empty.\n\n"
     )
-    print(Fore.CYAN + "  ****************************"
-          "***********************\n")
+    print(
+        Fore.CYAN + "  ****************************"
+          "***********************\n"
+        )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
