@@ -55,7 +55,7 @@ The primary functions used on this application are:
 - `restart()`
      - Restart the game.
 - `welcome()`
-    Displays the title of the game
+    - Displays the title of the game
 - `intro()`
     - displays an intro text
 - `the_stranded_friends()`
