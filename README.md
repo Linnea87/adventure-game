@@ -85,6 +85,9 @@ I've used the following Python packages and/or external imported packages.
 - `pyfiglet`: used for including the ASCII art.
 - `colorama`: used for including colors.
 
+## Features
+
+
 ## Technologies
 - [Python](https://www.python.org/) used as the back-end programming language.
 - [Git](https://git-scm.com/) used for version control. (git add, git commit, git push)

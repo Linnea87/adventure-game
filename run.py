@@ -288,7 +288,7 @@ def the_serch_for_water():
 def mountain_cave():
     """
     This interactive story
-    leads the user further in the game
+    leads the user further in the game.
     """
     clear()
     print_slow(
@@ -325,7 +325,8 @@ def mountain_cave():
 def the_field():
     """
     Here the interactive story leads the
-    user to their death and the game ends
+    user to their death, the game ends.
+    The user are asked to play again.
     """
     clear()
     print_slow(
@@ -358,7 +359,8 @@ def the_field():
 
 def mountain_top():
     """
-    
+    The penultimate scene. The user's choice 
+    determines whether the game continues or ends.
     """
     clear()
     print_slow(
@@ -391,6 +393,10 @@ def mountain_top():
 
 
 def the_rickety_bridge():
+    """
+    This function leads the user to death. 
+    The game ends and the user are asked to play again.
+    """
     clear()
     print_slow(
         "\tA bit into the path you will come to a\n"
@@ -419,6 +425,9 @@ def the_rickety_bridge():
 
 
 def the_waterfall():
+    """
+    The user survives and the game continues.
+    """
     clear()
     print_slow(
         "\n\tA little further into the path\n"
@@ -436,6 +445,10 @@ def the_waterfall():
 
 
 def the_rescue():
+    """
+    End the scene where the user is asked to choose
+    one of the two different options.
+    """
     clear()
     print_slow(
         "\n\t\t- " + name + " wake up wake up!!\n\n", Fore.BLUE)
@@ -465,6 +478,11 @@ def the_rescue():
 
 
 def through_the_mountain():
+    """
+    This path leads the user all the way forward and 
+    completes the game. 
+    The screen cleares out and the game restarts
+    """
     clear()
     print_slow(
         "\n\tYou run as fast as you can up\n"
@@ -489,6 +507,10 @@ def through_the_mountain():
 
 
 def the_climb():
+    """
+    Here the user stumbles on the finish line and dies. 
+    The user is prompted to play again.
+    """
     clear()
     print_slow(
         "\n\tYou start climbing up the mountain.\n"
