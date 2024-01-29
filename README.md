@@ -90,7 +90,7 @@ I've used the following Python packages and/or external imported packages.
 - `colorama`: used for including colors.
 
 ## Features
- 
+### Existing features
  - Welcome
     - The game's title with ASCII art and a welcome text with a question is dispalyed.
     The user is prompted to answer.
@@ -133,7 +133,16 @@ I've used the following Python packages and/or external imported packages.
     `part of the final scene`
 
     ![final scene](docs/final-scene.gif)
+### Future features
+- Add inventory that will be needed later in the story. 
+The end of the game depends on what the user has managed 
+to pick up from the inventory
 
+- Add more options to choose from in the story.
+
+- Add more dangers to the story
+
+- Add so it can be two players.
 
 
 
