@@ -309,7 +309,7 @@ def mountain_cave():
     )
     clear()
     print_slow(
-        "\tYou run forward and start drinking\n"
+        "\n\tYou run forward and start drinking\n"
         "\tas much as you can handle.\n"
         "\tWhen you are no longer thirsty, you\n"
         "\tlook for something to refill your\n"
