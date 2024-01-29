@@ -467,7 +467,7 @@ def the_rescue():
         "\t\t  through the mountain?\n\n", Fore.BLUE
     )
     time.sleep(1)
-    print(Fore.GREEN + "  path or climb?\n\n")
+    print(Fore.GREEN + "  path or climb?\n")
     the_last_choice = input(Fore.YELLOW + "  >> ").lower()
     while the_last_choice not in ("path", "climb"):
         print(Fore.RED + "\n  Invalid answer, enter path or climb\n")
