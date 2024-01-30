@@ -187,7 +187,7 @@ Throughout this project I have been testing the game by running it in the gitpod
 Below, all the validation that has been done is shown.
 
 ### Input Validation
-As I discussed in the `design` section, I have only validated the inputs that are the main key for the game to continue. 
+As I discussed in the [design](#design) section, I have only validated the inputs that are the main key for the game to continue. 
 
 - The gifs show that error messages with instructions are displayed if the user enters an invalid answer.
 
