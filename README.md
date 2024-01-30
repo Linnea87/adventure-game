@@ -45,7 +45,6 @@
 ## Data Model
 
 ### Flowchart
-
 I used a flowchart from [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 to map out how I envisioned the logic of the game. This flowchart is a basis for the most important functions and directions of the game. Therefore, the number of scenes may differ from the final result.
 
@@ -110,7 +109,6 @@ Since this is a text-based game, I have made an active choice not to validate th
 All these choices are to lighten up all the text, and make the game more user-friendly.
 
 ### Imports
-
 I've used the following Python packages and/or external imported packages.
 
 - `sys`: used for the restart() and print_slow() functions.
@@ -120,6 +118,7 @@ I've used the following Python packages and/or external imported packages.
 - `colorama`: used for including colors.
 
 ## Features
+
 ### Existing features
  - Welcome
     - The game's title with ASCII art and a welcome text with a question is dispalyed.
@@ -165,7 +164,6 @@ I've used the following Python packages and/or external imported packages.
         ![final scene](docs/final-scene.gif)
 
 ### Future features
-
 - Add inventory that will be needed later in the story. 
 The end of the game depends on what the user has managed 
 to pick up from the inventory.
@@ -177,7 +175,6 @@ to pick up from the inventory.
 - Add so it can be two players.
 
 ## Technologies
-
 - [Python](https://www.python.org/) used as the back-end programming language.
 - [Git](https://git-scm.com/) used for version control. (git add, git commit, git push)
 - [GitHub](github.com) used for secure online code storage.
@@ -185,7 +182,6 @@ to pick up from the inventory.
 - [Heroku](https://dashboard.heroku.com/apps) used for hosting the deployed back-end site.
 
 ## Testing
-
 Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal.
 
 Below, all the validation that has been done is shown.
@@ -226,8 +222,11 @@ As I discussed in the `design` section, I have only validated the inputs that ar
 
     ![Python Linter](docs/linter_2.webp)
 
-## Bugs
+    ![Python Linter](docs/linter_3.webp)
 
+    
+
+## Bugs
 ### Solved Bugs
 - My code broke in the_serch_for_water() function where the user's input are validated.
     - I had forgotten to give the input a specific name and solved this by naming that input to userInput.
@@ -239,15 +238,14 @@ As I discussed in the `design` section, I have only validated the inputs that ar
 - No unresolved bugs.
 
 ## Deployment
-
 ### Adding, committing and pushing code
-
 - All code has been pushed to the repository [adventure-game].(https://github.com/Linnea87/adventure-game)
 - All code has been regurlary added, committed and pushed throughout the project.
 - The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
   `git push`
 - Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project. 
+
 ### Deploying to Heroku
 I deployed my project directly to Heroku by doing the following:
 
