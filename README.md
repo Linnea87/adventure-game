@@ -43,12 +43,14 @@
 - Create a design that lightens up the text and makes the game user-friendly.
 
 ## Data Model
+
 ### Flowchart
 
 I used a flowchart from [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 to map out how I envisioned the logic of the game. This flowchart is a basis for the most important functions and directions of the game. Therefore, the number of scenes may differ from the final result.
 
 ![Flowchart](docs/blank_diagram.webp)
+
 ### Functions
 The primary functions used on this application are:
 
