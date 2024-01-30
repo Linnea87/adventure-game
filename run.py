@@ -25,12 +25,12 @@ def clear():
     This function clears the screen from written text.
     """
     os.system("clear")
-    
+
+
 def restart():
     """ Restarts the game"""
     python = sys.executable
     os.execl(python, python, * sys.argv)
-
 
 
 def welcome():
@@ -90,7 +90,8 @@ def player_name():
                 print(Fore.RED + "\n  Your name can only contain letters!\n")
             elif len(name) < 3:
                 print(
-                    Fore.RED + "\n  Your name needs to be 3 letters or more!\n")
+                    Fore.RED + "\n  Your name needs to be 3 "
+                    "letters or more!\n")
             else:
                 print_slow(
                     "\n\t" + name + ", you are now about to begin perhaps\n"
@@ -352,15 +353,15 @@ def the_field():
     )
     print(
         Fore.CYAN + "  ****************************"
-          "***********************\n"
-        )
+        "***********************\n"
+    )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
 
 def mountain_top():
     """
-    The penultimate scene. The user's choice 
+    The penultimate scene. The user's choice
     determines whether the game continues or ends.
     """
     clear()
@@ -395,7 +396,7 @@ def mountain_top():
 
 def the_rickety_bridge():
     """
-    This function leads the user to death. 
+    This function leads the user to death.
     The game ends and the user are asked to play again.
     """
     clear()
@@ -419,8 +420,8 @@ def the_rickety_bridge():
     )
     print(
         Fore.CYAN + "  ****************************"
-          "***********************\n"
-        )
+        "***********************\n"
+    )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
@@ -435,7 +436,7 @@ def the_waterfall():
         "\tyou will come to a large waterfall.\n\n"
     )
     print_slow(
-        "\t\t- " + name + " Let's jump into the water " 
+        "\t\t- " + name + " Let's jump into the water "
         "and cool off!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to take a cooling bath! ")
     print_slow(
@@ -481,8 +482,8 @@ def the_rescue():
 
 def through_the_mountain():
     """
-    This path leads the user all the way forward and 
-    completes the game. 
+    This path leads the user all the way forward and
+    completes the game.
     The screen cleares out and the game restarts
     """
     clear()
@@ -501,8 +502,8 @@ def through_the_mountain():
     )
     print(
         Fore.CYAN + "  ****************************"
-          "***********************\n"
-        )
+        "***********************\n"
+    )
     time.sleep(1)
     clear()
     restart()
@@ -510,7 +511,7 @@ def through_the_mountain():
 
 def the_climb():
     """
-    Here the user stumbles on the finish line and dies. 
+    Here the user stumbles on the finish line and dies.
     The user is prompted to play again.
     """
     clear()
@@ -531,8 +532,8 @@ def the_climb():
     )
     print(
         Fore.CYAN + "  ****************************"
-          "***********************\n"
-        )
+        "***********************\n"
+    )
     input(Fore.GREEN + "  press enter to try again! ")
     restart()
 
