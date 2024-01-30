@@ -83,7 +83,7 @@ to map out how I envisioned the logic of the game. This flowchart is a basis for
     - Calls all the game functions 
 
 ### Design
-Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. ***These inputs are part of the design and their purpose is to keep the ***user*** interested in the game.*** 
+Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. *These inputs are part of the design and their purpose is to keep the user interested in the game.*
 
 - **An example of such input:**
 
@@ -106,7 +106,7 @@ Since this is a text-based game, I have made an active choice not to validate th
 
     - `Green` is used when the user is expected to be interactive in the game.
 
-***All these choices are to lighten up the text, and make the game more user-friendly.***
+*All these choices are to lighten up the text, and make the game more user-friendly.*
  
 ### Imports
 I've used the following Python packages and/or external imported packages.
@@ -186,7 +186,7 @@ Throughout this project I have been testing the game by running it in the gitpod
 Below, all the validation that has been done is shown.
 
 ### Input Validation
-As I discussed in the [design](#design) section, I have only validated the inputs that are the main key for the game to continue. 
+As I discussed in the [Design](#design) section, I have only validated the inputs that are the main key for the game to continue. 
 
 - The gifs show that error messages with instructions are displayed if the user enters an invalid answer.
 
