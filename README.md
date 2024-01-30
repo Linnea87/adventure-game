@@ -63,18 +63,18 @@ An example of such input is shown below:
 
 In my design, I have also made frequent use of:
 
-- `\n` for new line
+- `\n` for new line.
 - `\t` for move the text a bit towards the center.
 
 The colors used are well chosen:
 
-- `Red` is used for error messages
+- `Red` is used for error messages.
 
-- `White` is used for the narration
+- `White` is used for the narration.
 
-- `Yellow` is used for the user's voice
+- `Yellow` is used for the user's voice.
 
-- `Blue` is used for the friend's voice
+- `Blue` is used for the friend's voice.
 
 - `Green` is used when the user is expected to be interactive in the game.
  
@@ -95,7 +95,7 @@ I've used the following Python packages and/or external imported packages.
     - The game's title with ASCII art and a welcome text with a question is dispalyed.
     The user is prompted to answer.
 
-    `if the answer are no:`
+    `If the answer are no:`
 
     ![No answer](docs/no-answer.gif)
 
@@ -107,7 +107,7 @@ I've used the following Python packages and/or external imported packages.
 - The game
     - When the user hits enter, the game starts with an intro and then the first scene in the game dispalyes.
 
-    `part of scene one`
+    `part of scene one:`
 
     ![part of scene one](docs/scene-one.gif)
 
@@ -136,11 +136,11 @@ I've used the following Python packages and/or external imported packages.
 ### Future features
 - Add inventory that will be needed later in the story. 
 The end of the game depends on what the user has managed 
-to pick up from the inventory
+to pick up from the inventory.
 
 - Add more options to choose from in the story.
 
-- Add more dangers to the story
+- Add more dangers to the story.
 
 - Add so it can be two players.
 
@@ -156,12 +156,12 @@ to pick up from the inventory
 ## Testing
 Throughout this project I have been testing the game by running it in the gitpod terminal and Heroku terminal.
 
-Below all the validation that has been done is shown.
+Below, all the validation that has been done is shown.
 
 ### Input Validation
 As I discussed in the `design` section, I have only validated the inputs that are the main key for the game to continue. 
 
-- The gifs show that error messages with instructions are displayed if the user enters an invalid answer
+- The gifs show that error messages with instructions are displayed if the user enters an invalid answer.
  #### The yes or no input
 ![Yes or no](docs/yes-no.gif)
 #### The name input
@@ -186,12 +186,12 @@ As I discussed in the `design` section, I have only validated the inputs that ar
 - My code broke in the_serch_for_water() function where the user's input are validated.
     - I had forgotten to give the input a specific name and solved this by naming that input to userInput.
 - It was also broken in other validated inputs. 
-    - I solved this by adding .lower after each validated input 
+    - I solved this by adding .lower after each validated input. 
 ## Unresolved Bugs
 - No unresolved bugs.
 ## Deployment
 ### Adding, committing and pushing code
-- All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
+- All code has been pushed to the repository [adventure-game].(https://github.com/Linnea87/adventure-game)
 - All code has been regurlary added, committed and pushed throughout the project.
 - The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
@@ -201,7 +201,7 @@ As I discussed in the `design` section, I have only validated the inputs that ar
 I deployed my project directly to Heroku by doing the following:
 
 - Created an account at Heroku.com.
-- Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`
+- Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`.
 - Clicked on "Create new app" and named it adventure-game.
 - Clicked on Settings and added Backpacks - Python and Node.js.
 - Made sure the backpacks were in the right order.

@@ -71,7 +71,7 @@ def player_answer():
         clear()
         print_slow(
             "\n\tGood! The first thing you have to do "
-            "is enter your name below!\n\n"
+            "is to enter your name below!\n\n"
         )
 
 
@@ -114,13 +114,13 @@ def intro():
     clear()
     print_slow(
         "\n\t\tWhat was supposed to be a quiet and\n"
-        "\t\tlovely boating holiday out at sea\n"
+        "\t\tlovely boat holiday out at sea\n"
         "\t\twith some of your closest friends,\n"
         "\t\tturned out to be the complete opposite!\n\n"
         "\t\tAfter a few days, you end up in the eye\n"
         "\t\tof the worst storm you've ever experienced.\n"
         "\t\tThe heavy rain and the powerful waves\n"
-        "\t\tdestroy parts of your boat and it slowly\n"
+        "\t\tdestroys parts of your boat and it slowly\n"
         "\t\tbegins to sink.\n\n"
         "\t\tIn a panic, you try to get to\n"
         "\t\tthe lifeboat to save you and your friends,\n"
@@ -269,7 +269,7 @@ def the_serch_for_water():
     time.sleep(1)
     print_slow(
         "\n\t\t- Do we really have to go in there " + name + "?\n"
-        "\t\t  It's jet black.\n"
+        "\t\t  It's pitch black.\n"
         "\t\t  Isn't it better to try to walk\n"
         "\t\t  around the cave instead?\n\n", Fore.BLUE
     )
@@ -312,8 +312,8 @@ def mountain_cave():
         "\n\tYou run forward and start drinking\n"
         "\tas much as you can handle.\n"
         "\tWhen you are no longer thirsty, you\n"
-        "\tlook for something to refill your\n"
-        "\twater with without any luck.\n\n"
+        "\tstart looking for something to fill\n"
+        "\twater with, without any luck.\n\n"
     )
     print_slow(
         "\tYou therefore decide to find a\n"
@@ -435,7 +435,8 @@ def the_waterfall():
         "\tyou will come to a large waterfall.\n\n"
     )
     print_slow(
-        "\t\t- " + name + " Let's jump in and cool off!\n\n", Fore.BLUE)
+        "\t\t- " + name + " Let's jump into the water " 
+        "and cool off!\n\n", Fore.BLUE)
     input(Fore.GREEN + "  Press enter to take a cooling bath! ")
     print_slow(
         "\n\tWhen you have finished swimming, you continue\n"
@@ -458,7 +459,7 @@ def the_rescue():
         "\tmuffled sound of a helicopter.\n"
         "\thurriedly you start looking around to find\n"
         "\tdifferent ways to get up the mountain.\n\n"
-        "\tA little way off you see a path\n"
+        "\tA little way off to the side, you see a path\n"
         "\twinding through the mountain.\n\n"
     )
     print_slow(
