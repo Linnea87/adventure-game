@@ -51,7 +51,7 @@ to map out how I envisioned the logic of the game. This flowchart is a basis for
 ![Flowchart](docs/blank_diagram.webp)
 
 ### Functions
-The primary functions used on this application are:
+*The primary functions used on this application are:*
 
 - `print()`
     - Prints out different questions to the user.
@@ -83,18 +83,18 @@ The primary functions used on this application are:
     - Calls all the game functions 
 
 ### Design
-Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. These inputs are part of the design and their purpose is to keep the user interested in the game. 
+Since this is a text-based game, I have made an active choice not to validate the inputs where the user is prompted to press `enter` to be interactive. ***These inputs are part of the design and their purpose is to keep the ***user*** interested in the game.*** 
 
-- An example of such input:
+- **An example of such input:**
 
     ![Enter input](docs/enter-input.gif)
 
-- In my design, I have also made frequent use of:
+- **In my design, I have also made frequent use of:**
 
     - `\n` for new line.
     - `\t` for move the text a bit towards the center.
 
-- The colors used are well chosen:
+- **The colors used are well chosen:**
 
     - `Red` is used for error messages.
 
@@ -105,9 +105,9 @@ Since this is a text-based game, I have made an active choice not to validate th
     - `Blue` is used for the friend's voice.
 
     - `Green` is used when the user is expected to be interactive in the game.
- 
-All these choices are to lighten up all the text, and make the game more user-friendly.
 
+***All these choices are to lighten up the text, and make the game more user-friendly.***
+ 
 ### Imports
 I've used the following Python packages and/or external imported packages.
 
@@ -120,32 +120,31 @@ I've used the following Python packages and/or external imported packages.
 ## Features
 
 ### Existing features
- - Welcome
-    - The game's title with ASCII art and a welcome text with a question is dispalyed.
-    The user is prompted to answer.
+- **Welcome**
+    - The game's title with ASCII art and a welcome text with a question is dispalyed. The user is prompted to answer.
 
-        `If the answer are no:`
+    `If the answer are no:`
 
-        ![No answer](docs/no-answer.gif)
+    ![No answer](docs/no-answer.gif)
 
 
-        `If the answer are yes:`
+    `If the answer are yes:`
     
-        ![Yes answer](docs/answer-yes.gif)
+    ![Yes answer](docs/answer-yes.gif)
 
-- The game
+- **The game**
     - When the user hits enter, the game starts with an intro and then the first scene in the game dispalyes.
 
         `part of scene one:`
 
         ![part of scene one](docs/scene-one.gif)
 
-- The Main scenes
+- **The Main scenes**
     - In all the main scenes there are always two options to choose from.   
     
         ![The options](docs/first-choice.webp)
 
-- The options
+- **The options**
     - One option leads the user forward to win. While the other option leads the user to the end of the game, and the user is prompted to play again. Except in the first main scene where both options move the game forward
 
         `example of an ending scene:`
@@ -156,7 +155,7 @@ I've used the following Python packages and/or external imported packages.
 
         ![Game continue](docs/game-continue.gif)
 
-- To survive the island
+- **To survive the island**
     - The user must make it all the way to the rescue and leave the island to survive this adventure.  When the user succeeds the game restarts.
 
         `part of the final scene`
@@ -224,8 +223,6 @@ As I discussed in the [design](#design) section, I have only validated the input
 
     ![Python Linter](docs/linter_3.webp)
 
-    
-
 ## Bugs
 ### Solved Bugs
 - My code broke in the_serch_for_water() function where the user's input are validated.
@@ -239,7 +236,8 @@ As I discussed in the [design](#design) section, I have only validated the input
 
 ## Deployment
 ### Adding, committing and pushing code
-- All code has been pushed to the repository [adventure-game].(https://github.com/Linnea87/adventure-game)
+
+- All code has been pushed to the repository [adventure-game](https://github.com/Linnea87/adventure-game)
 - All code has been regurlary added, committed and pushed throughout the project.
 - The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
@@ -247,7 +245,7 @@ As I discussed in the [design](#design) section, I have only validated the input
 - Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project. 
 
 ### Deploying to Heroku
-I deployed my project directly to Heroku by doing the following:
+*I deployed my project directly to Heroku by doing the following:*
 
 - Created an account at Heroku.com.
 - Installed my own packages in the requirements.txt terminal by typing `pip3 freeze --local > requirements.txt`.
@@ -257,6 +255,7 @@ I deployed my project directly to Heroku by doing the following:
 - From the new app Settings, I clicked Reveal Config Vars, and sets the value of KEY to PORT, and the value to 8000 then selected add.
 - Connected my GitHub profile and found the right Repository.
 - Manually deployed the page and clicked "Eanble automatic deploys" at the same time.
+
 ## Credits
 
 **Source**|**Location**|**Notes**
@@ -271,5 +270,4 @@ I deployed my project directly to Heroku by doing the following:
 [Github](https://gist.github.com/jrosco/d01b28c2f37100bb5278)|Adventure-game terminal|Code that are modify for restart the game
 
 ## Acknowledgments
-
 - Thanks to my mentor [Graeme Taylor](https://github.com/G-Taylor) who always gives me good tips, advice and feedback on how to plan and implement my projects. And for this project advised me how to best use the flowchart and gif recording.
