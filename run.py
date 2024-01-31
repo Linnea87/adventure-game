@@ -516,9 +516,9 @@ def the_climb():
     """
     clear()
     print_slow(
-        "\n\tYou start climbing up the mountain.\n"
-        "\tHalfway up, fatigue starts to set in\n"
-        "\tand you get lactic acid in both your legs and arms.\n\n"
+       "\n\tYou start climbing up the mountain. Halfway\n"
+        "\tup, fatigue starts to set in and you get\n"
+        "\tlactic acid in both your legs and arms.\n\n"
         "\tOliwer, who climbs first, loses his grip and falls.\n\n"
     )
     time.sleep(1)
