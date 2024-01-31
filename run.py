@@ -332,14 +332,12 @@ def the_field():
     """
     clear()
     print_slow(
-        "\n\tYou go around the mountain cave\n"
-        "\tand find another way.\n\n"
-        "\tThe sun is scorching and\n"
-        "\tafter hours of hiking\n"
-        "\tyou are so tired and\n"
-        "\tdehydrated that you\n"
-        "\tdon't notice that you have ended up\n"
-        "\tin the middle of a field of quicksand.\n\n"
+        "\n\tYou go around the mountain cave and\n"
+        "\tfind another way.\n\n"
+        "\tThe sun is scorching and after hours of\n"
+        "\thiking you are so tired and dehydrated\n"
+        "\tthat you don't notice that you have ended\n"
+        "\tup in the middle of a field of quicksand.\n\n"
     )
     print_slow("\t\t- Help, I'm sinking!!!!\n\n", Fore.BLUE)
     time.sleep(1)
@@ -517,9 +515,9 @@ def the_climb():
     clear()
     print_slow(
        "\n\tYou start climbing up the mountain. Halfway\n"
-        "\tup, fatigue starts to set in and you get\n"
-        "\tlactic acid in both your legs and arms.\n\n"
-        "\tOliwer, who climbs first, loses his grip and falls.\n\n"
+       "\tup, fatigue starts to set in and you get\n"
+       "\tlactic acid in both your legs and arms.\n\n"
+       "\tOliwer, who climbs first, loses his grip and falls.\n\n"
     )
     time.sleep(1)
     input(Fore.GREEN + "  Press enter to save Oliwer! ")
